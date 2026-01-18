@@ -1,0 +1,166 @@
+{
+  "aggregatedAt": "2026-01-18T15:43:34.758Z",
+  "meetings": [
+    {
+      "id": "788DCC98-6E63-4A9B-80CB-5098D41799C3:B14989BA-74A5-4AAF-8A9A-012DD8F58988",
+      "title": "Stretchen",
+      "time": "2026-01-18T09:05:00",
+      "keywords": [
+        "Stretchen"
+      ],
+      "context": {
+        "emails": [],
+        "pastMeetings": [],
+        "actionItems": [],
+        "projectNotes": [
+          {
+            "title": "Q1 Project Overview",
+            "path": "/Projects/Q1-Planning.md",
+            "content": "Main objectives for Q1: 1) Complete migration, 2) Launch new feature..."
+          }
+        ]
+      },
+      "relevance": {
+        "emails": 0,
+        "pastMeetings": 0,
+        "actionItems": 0,
+        "projectNotes": 1
+      }
+    },
+    {
+      "id": "788DCC98-6E63-4A9B-80CB-5098D41799C3:0DE38400-C1EB-4BD4-8268-02E98B692368",
+      "title": "Papi Geburigschänk / Mami Geburigschänk",
+      "time": "2026-01-18T12:55:00",
+      "keywords": [
+        "Papi",
+        "Geburigschänk",
+        "Mami",
+        "Geburigschänk"
+      ],
+      "context": {
+        "emails": [],
+        "pastMeetings": [],
+        "actionItems": [],
+        "projectNotes": [
+          {
+            "title": "Q1 Project Overview",
+            "path": "/Projects/Q1-Planning.md",
+            "content": "Main objectives for Q1: 1) Complete migration, 2) Launch new feature..."
+          }
+        ]
+      },
+      "relevance": {
+        "emails": 0,
+        "pastMeetings": 0,
+        "actionItems": 0,
+        "projectNotes": 1
+      }
+    },
+    {
+      "id": "788DCC98-6E63-4A9B-80CB-5098D41799C3:4EAAAF5D-C13C-4C70-B46C-B97AF0D93DCD",
+      "title": "Pendule aufziehen",
+      "time": "2026-01-18T19:30:00",
+      "keywords": [
+        "Pendule",
+        "aufziehen"
+      ],
+      "context": {
+        "emails": [],
+        "pastMeetings": [],
+        "actionItems": [],
+        "projectNotes": [
+          {
+            "title": "Q1 Project Overview",
+            "path": "/Projects/Q1-Planning.md",
+            "content": "Main objectives for Q1: 1) Complete migration, 2) Launch new feature..."
+          }
+        ]
+      },
+      "relevance": {
+        "emails": 0,
+        "pastMeetings": 0,
+        "actionItems": 0,
+        "projectNotes": 1
+      }
+    },
+    {
+      "id": "788DCC98-6E63-4A9B-80CB-5098D41799C3:139965E5-7499-4D2E-8F9B-0CD446DDCC93",
+      "title": "Bonsai düngen",
+      "time": "2026-01-18T20:00:00",
+      "keywords": [
+        "Bonsai",
+        "düngen"
+      ],
+      "context": {
+        "emails": [],
+        "pastMeetings": [],
+        "actionItems": [],
+        "projectNotes": [
+          {
+            "title": "Q1 Project Overview",
+            "path": "/Projects/Q1-Planning.md",
+            "content": "Main objectives for Q1: 1) Complete migration, 2) Launch new feature..."
+          }
+        ]
+      },
+      "relevance": {
+        "emails": 0,
+        "pastMeetings": 0,
+        "actionItems": 0,
+        "projectNotes": 1
+      }
+    },
+    {
+      "id": "788DCC98-6E63-4A9B-80CB-5098D41799C3:0E6672F6-5191-4A05-86FF-3F6187C2A6AF",
+      "title": "Stretchen",
+      "time": "2026-01-18T20:30:00",
+      "keywords": [
+        "Stretchen"
+      ],
+      "context": {
+        "emails": [],
+        "pastMeetings": [],
+        "actionItems": [],
+        "projectNotes": [
+          {
+            "title": "Q1 Project Overview",
+            "path": "/Projects/Q1-Planning.md",
+            "content": "Main objectives for Q1: 1) Complete migration, 2) Launch new feature..."
+          }
+        ]
+      },
+      "relevance": {
+        "emails": 0,
+        "pastMeetings": 0,
+        "actionItems": 0,
+        "projectNotes": 1
+      }
+    },
+    {
+      "id": "788DCC98-6E63-4A9B-80CB-5098D41799C3:9F5FED63-0F15-41C5-8AED-AF9F407D427C",
+      "title": "Fluorzahnpasta",
+      "time": "2026-01-18T22:00:00",
+      "keywords": [
+        "Fluorzahnpasta"
+      ],
+      "context": {
+        "emails": [],
+        "pastMeetings": [],
+        "actionItems": [],
+        "projectNotes": [
+          {
+            "title": "Q1 Project Overview",
+            "path": "/Projects/Q1-Planning.md",
+            "content": "Main objectives for Q1: 1) Complete migration, 2) Launch new feature..."
+          }
+        ]
+      },
+      "relevance": {
+        "emails": 0,
+        "pastMeetings": 0,
+        "actionItems": 0,
+        "projectNotes": 1
+      }
+    }
+  ]
+}

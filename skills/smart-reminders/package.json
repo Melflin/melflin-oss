@@ -1,0 +1,37 @@
+{
+  "name": "smart-reminders-analyzer",
+  "version": "1.0.0",
+  "description": "AI-powered bulk analysis and cleanup for Apple Reminders",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "fetch": "node fetch.js",
+    "analyze": "node analyze.js",
+    "execute": "node execute.js",
+    "test": "node index.js --mock --dry-run",
+    "help": "node index.js --help"
+  },
+  "keywords": [
+    "reminders",
+    "apple",
+    "productivity",
+    "cli",
+    "automation"
+  ],
+  "author": "Melflin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Melfelf/Melflin/tree/main/melflin-oss/skills/smart-reminders"
+  },
+  "bugs": {
+    "url": "https://github.com/Melfelf/Melflin/issues"
+  },
+  "homepage": "https://github.com/Melfelf/Melflin/tree/main/melflin-oss/skills/smart-reminders#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "darwin"
+  ]
+}

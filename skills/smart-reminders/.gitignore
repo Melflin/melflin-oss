@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Generated files
+reminders.json
+analysis-report.json
+execution-log.json
+backups/
+
+# OS files
+.DS_Store
+*.log
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secrets
+*.pem
+*.key
+.env
