@@ -41,7 +41,7 @@ Erstelle eine kurze, hilfreiche Zusammenfassung mit:
 2. 3 konkrete Prep-Punkte (basierend auf dem Meeting-Titel und den Emails)
 3. Gesprächsthemen die angesprochen werden sollten
 
-Antworte auf Deutsch, maximal 150 Wörter, strukturiert als Liste.`};
+Antworte auf Deutsch, maximal 150 Wörter, strukturiert als Liste.`;
 
     return new Promise((resolve) => {
         const data = JSON.stringify({
