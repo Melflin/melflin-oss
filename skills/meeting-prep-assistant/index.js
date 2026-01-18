@@ -16,6 +16,9 @@ const hours = hoursArg ? parseInt(hoursArg.split('=')[1]) : 24;
 const formatArg = args.find(a => a.startsWith('--format='));
 const format = formatArg ? formatArg.split('=')[1] : 'brief';
 
+const notifyArg = args.find(a => a.startsWith('--notify='));
+const notifyTarget = notifyArg ? notifyArg.split('=')[1] : null;
+
 async function main() {
     console.log('📅 Meeting Prep Assistant');
     console.log('=========================\n');
@@ -25,6 +28,9 @@ async function main() {
     
     if (meetings.length === 0) {
         console.log('No upcoming meetings found.');
+        if (notifyTarget) {
+            console.log(`[NOTIFY:${notifyTarget}] Keine bevorstehenden Meetings gefunden.`);
+        }
         return;
     }
     
@@ -37,11 +43,11 @@ async function main() {
         console.log(`   Location: ${meeting.location || 'TBD'}`);
         console.log('');
         
-        // Analyze context (placeholder)
+        // Analyze context
         const context = await analyzeContext(meeting);
         
-        // Generate briefing
-        const briefing = generateBriefing(meeting, context, format);
+        // Generate briefing (async for AI)
+        const briefing = await generateBriefing(meeting, context, format);
         console.log(briefing);
         console.log('\n---\n');
     }

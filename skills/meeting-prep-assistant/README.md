@@ -26,18 +26,19 @@ node index.js --hours=168
 
 - ✅ **Calendar Integration** - Fetches upcoming meetings from Apple Calendar via `accli`
 - ✅ **Email Context** - Searches Apple Mail for related emails (SQLite-fast, ~50ms)
-- 🔄 **AI Briefing** - Generates structured meeting briefs
-- ⏳ **Proactive Notifications** - Coming soon (2h before meeting)
+- ✅ **AI Briefing** - Generates AI-powered summaries (MiniMax API)
+- ✅ **Proactive Notifications** - notify-upcoming.js script for cron integration
 
 ## Architecture
 
 ```
 meeting-prep-assistant/
-├── index.js      # CLI entrypoint with --hours and --format flags
-├── fetch.js      # Apple Calendar integration via accli
-├── analyze.js    # Context aggregation (Emails, Notes, Past Meetings)
-├── execute.js    # Briefing generation
-└── README.md     # This file
+├── index.js              # CLI entrypoint with --hours and --format flags
+├── fetch.js              # Apple Calendar integration via accli
+├── analyze.js            # Context aggregation (Emails, Notes, Past Meetings)
+├── execute.js            # AI-powered briefing generation (MiniMax API)
+├── notify-upcoming.js    # Proactive notifications (cron-friendly)
+└── README.md             # This file
 ```
 
 ## Context Sources
@@ -92,10 +93,10 @@ console.log('Meetings:', JSON.stringify(meetings, null, 2));
 
 - [x] Calendar integration (fetch.js)
 - [x] Email search (analyze.js with apple-mail)
-- [ ] AI-powered summary (context.emails → LLM → summary)
+- [x] AI-powered summary (execute.js with MiniMax API)
+- [x] Proactive trigger (notify-upcoming.js for cron)
 - [ ] Obsidian notes integration
-- [ ] Proactive trigger (cron, 2h before)
-- [ ] Telegram/WhatsApp notification delivery
+- [ ] Telegram/WhatsApp notification delivery (via Clawdbot)
 
 ---
 
