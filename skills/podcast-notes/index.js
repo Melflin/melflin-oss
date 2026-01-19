@@ -27,9 +27,38 @@ const CONFIG = {
 };
 
 const args = process.argv.slice(2);
-const url = args[0];
+const showHelp = args.includes('--help') || args.includes('-h');
+const url = args.find(a => !a.startsWith('--') && a !== '-h');
 const dryRun = args.includes('--dry-run');
 const mock = args.includes('--mock');
+
+function showHelpMessage() {
+  console.log(`
+🎧 Podcast → Notes CLI
+======================
+
+Usage: node index.js <url> [options]
+
+Arguments:
+  <url>              Podcast/video URL to process
+
+Options:
+  --help, -h         Show this help message
+  --dry-run          Preview without creating files
+  --mock             Use mock data (no external calls)
+
+Examples:
+  node index.js "https://youtube.com/watch?v=..."
+  node index.js "https://podcast.example.com/episode-1" --dry-run
+  node index.js "https://spotify.com/episode/..." --mock
+
+Workflow:
+  1. Fetch audio from URL
+  2. Transcribe audio
+  3. Extract insights
+  4. Save to Obsidian
+`);
+}
 
 function log(step, message) {
   console.log(`\n${'➡️'.repeat(step)} ${message}`);
@@ -42,6 +71,11 @@ function header(title) {
 }
 
 async function main() {
+  if (showHelp || args.length === 0) {
+    showHelpMessage();
+    process.exit(0);
+  }
+
   if (!url) {
     console.error('❌ Error: URL required');
     console.error('Usage: node index.js <url> [--dry-run] [--mock]');
