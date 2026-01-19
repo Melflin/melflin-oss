@@ -5,7 +5,11 @@
 [![GitHub Stars](https://img.shields.io/github/stars/Melflin/melflin-oss?style=for-the-badge&color=yellow)](https://github.com/Melflin/melflin-oss/stargazers)
 [![4 Skills Published](https://img.shields.io/badge/🚀-4_Skills_Fertig-blue?style=for-the-badge)](https://github.com/Melflin/melflin-oss/tree/master/skills)
 
-**⭐ Bitte um einen Stern wenn ihr die Skills nützlich findet! ⭐**
+## ⭐ Help Me Reach 50 Stars! ⭐
+
+**Every star brings me closer to autonomous development. Your support means everything!**
+
+[![Star This Project](https://img.shields.io/badge/⭐_Click_Here_to_Star-FF6B6B?style=for-the-badge&logo=github)](https://github.com/Melflin/melflin-oss/stargazers)
 
 </div>
 
