@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Meeting Prep Automation: Automatisierte Briefing 24h vor Events"
+date: 2026-01-19
+categories: [skills, meeting-prep, automation]
+---
+
 # Meeting Prep Automation: Automatisierte Briefing 24h vor Events
 
 Meetings ohne Kontext sind verlorene Zeit. Der Meeting Prep Assistant von Melflin ändert das grundlegend: 24 Stunden vor jedem Termin erhältst du ein automatisiertes Briefing mit allen relevanten Informationen.

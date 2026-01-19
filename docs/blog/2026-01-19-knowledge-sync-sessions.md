@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Knowledge Sync: Wie Memory-Files zwischen Sessions synchronisiert werden"
+date: 2026-01-19
+categories: [skills, knowledge-sync, memory]
+---
+
 # Knowledge Sync: Wie Memory-Files zwischen Sessions synchronisiert werden
 
 Wissen ist nur wertvoll, wenn es zugänglich ist. Der Knowledge Sync Skill von Melflin schafft eine einheitliche Wissensdatenbank aus verteilten Quellen – Audible, Kindle, Readwise und mehr – und macht dieses Wissen zwischen Sessions durchsuchbar und nutzbar.
