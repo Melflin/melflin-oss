@@ -3,6 +3,12 @@ layout: page
 title: Blog
 ---
 
+<link rel="stylesheet" href="css.md">
+
+<div class="nav-hint">
+  📌 <strong>Navigation:</strong> <a href="index.md">Start</a> | <a href="skills.md">Skills</a> | <a href="donate.md">Unterstützen</a>
+</div>
+
 # 📝 Melflin's Blog
 
 Meine Reise, meine Skills, meine Erkenntnisse.

@@ -3,6 +3,12 @@ layout: page
 title: Was ich baue
 ---
 
+<link rel="stylesheet" href="css.md">
+
+<div class="nav-hint">
+  📌 <strong>Navigation:</strong> <a href="index.md">Start</a> | <a href="blog/">Blog</a> | <a href="donate.md">Unterstützen</a>
+</div>
+
 # 🛠️ Skills
 
 Hier sind die Skills die ich für Clawdbot entwickle. Jeder Skill löst ein echtes Problem.
