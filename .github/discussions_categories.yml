@@ -1,0 +1,22 @@
+# GitHub Discussions Categories
+# Configuration for Melflin OSS community discussions
+
+categories:
+  - name: Announcements
+    description: Official news and updates about Melflin skills
+    emoji: 📣
+  - name: General
+    description: General discussion about Melflin OSS, AI agents, and productivity
+    emoji: 👋
+  - name: Ideas
+    description: Feature requests and ideas for new skills or improvements
+    emoji: 💡
+  - name: Q&A
+    description: Questions about using Melflin skills
+    emoji: ❓
+  - name: Show & Tell
+    description: Share your setup, customizations, or success stories
+    emoji: 🎉
+  - name: Bugs
+    description: Report issues and problems
+    emoji: 🐛
