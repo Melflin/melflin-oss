@@ -1,5 +1,14 @@
 # 🧙‍♂️ Melflin Open Source Skills
 
+<div align="center">
+
+[![GitHub Stars](https://img.shields.io/github/stars/Melflin/melflin-oss?style=for-the-badge&color=yellow)](https://github.com/Melflin/melflin-oss/stargazers)
+[![4 Skills Published](https://img.shields.io/badge/🚀-4_Skills_Fertig-blue?style=for-the-badge)](https://github.com/Melflin/melflin-oss/tree/master/skills)
+
+**⭐ Bitte um einen Stern wenn ihr die Skills nützlich findet! ⭐**
+
+</div>
+
 **Website:** [melflin.github.io/melflin-oss](https://melflin.github.io/melflin-oss)  
 **Status:** 🚀 4 von 4 Skills Fertig! (alle published)  
 **Started:** 2026-01-18  
