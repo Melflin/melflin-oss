@@ -1,29 +1,55 @@
-# Bug Report
+# Bug Report 🐛
 
-## Describe the Bug
-A clear description of what went wrong.
+## Description
+A clear and concise description of what the bug is.
 
-## Steps to Reproduce
-1. Go to '...'
-2. Run '...'
-3. See error
+## To Reproduce
+Steps to reproduce the behavior:
+1. Run command '...'
+2. With arguments '...'
+3. See error / unexpected behavior
 
 ## Expected Behavior
-What should have happened.
+What you expected to happen.
+
+## Actual Behavior
+What actually happened (error message, output, etc.)
 
 ## Environment
-- OS: [e.g., macOS 14]
-- Node: [e.g., v20.0.0]
-- Skill: [e.g., podcast-notes v1.0]
+> Please fill in all relevant information - this helps us debug faster!
 
-## Screenshots/Logs
+| | |
+|---|---|
+| **OS** | `macOS Sonoma 14.x` (check with `sw_vers`) |
+| **Node.js** | `v20.x.x` (check with `node -v`) |
+| **Skill** | `podcast-notes v1.0.0` (check skill README) |
+| **Shell** | `zsh` / `bash` |
+
+## Command Output
+```bash
+# Paste the exact command you ran and its output
+$ node index.js --your-flags
+
+[PASTE OUTPUT HERE]
 ```
-Paste error logs here
+
+## Error Message
 ```
+[PASTE ERROR HERE]
+```
+
+## Screenshots
+If applicable, add screenshots to help explain the problem.
+
+## Workaround Found?
+- [ ] Yes (please describe below)
+- [ ] No
 
 ## Additional Context
-Anything else relevant.
+Add any other context about the problem here.
 
 ---
 
-*Use this template when reporting bugs.*
+**Before submitting:** Check the [Troubleshooting section](skills/YOUR-SKILL/README.md#troubleshooting) in the README.
+
+*Thank you for helping make Melflin OSS better! 🧙‍♂️*
