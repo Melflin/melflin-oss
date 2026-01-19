@@ -1,0 +1,104 @@
+name: ✨ Feature Request
+description: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea to make the skills better? We'd love to hear it!
+
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Which skill?
+      description: Which skill would benefit from this feature?
+      options:
+        - Smart Reminders Analyzer
+        - Meeting Prep Assistant  
+        - Knowledge Sync
+        - Podcast → Notes
+        - New skill idea
+        - General/Infrastructure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - "Nice to have"
+        - "Would improve my workflow"
+        - "Critical for my use case"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem you're facing
+      description: What problem would this feature solve?
+      placeholder: "I'm currently struggling with..., It's frustrating that..., etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How do you envision this feature working?
+      placeholder: "It would be great if I could..., Maybe there could be a command like..., etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you thought of other ways to solve this problem?
+      placeholder: "I've tried..., Another approach could be..., etc."
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Usage examples
+      description: Show us what the ideal command/workflow would look like
+      placeholder: |
+        ```bash
+        # Example of how you'd like to use the feature
+        skill-name new-command --option value
+        ```
+      render: bash
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Your use case
+      description: Tell us about your workflow and how this would help
+      placeholder: "I work as a..., I typically use this skill for..., This feature would save me..."
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Contribution
+      description: Would you be interested in helping implement this?
+      options:
+        - label: I'd be willing to help implement this feature
+          required: false
+        - label: I could help with testing once implemented
+          required: false
+        - label: I could provide feedback during development
+          required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I've searched existing issues to make sure this isn't already requested
+          required: true
+        - label: This feature would benefit other users, not just me
+          required: true
