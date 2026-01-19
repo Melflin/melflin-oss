@@ -1,7 +1,7 @@
 # 🧙‍♂️ Melflin Open Source Skills
 
 **Website:** [melflin.github.io/melflin-oss](https://melflin.github.io/melflin-oss)  
-**Status:** 🚀 2 von 4 Skills Fertig!  
+**Status:** 🚀 4 von 4 Skills Fertig! (alle published)  
 **Started:** 2026-01-18  
 **Goal:** Build killer Clawdbot skills → GitHub Sponsoring → Autonomous Revenue
 
@@ -38,15 +38,15 @@ Build high-quality, open-source AI agent skills that solve real problems. Start 
 **Solution:** Auto-briefings 2h before meetings (emails, notes, past interactions)  
 **Status:** 🚀 Ready for Release Tags
 
-### **3. Knowledge Sync** 🔄 *(In Progress)*
+### **3. Knowledge Sync** 🔄 ✅ FERTIG!
 **Problem:** Highlights scattered across Readwise/Kindle/Audible  
 **Solution:** Manual workflow → Obsidian sync → unified knowledge base  
-**Status:** 🔨 Week 4-5 (Feb 9 - Feb 22)
+**Status:** 🚀 Published (2026-01-19)
 
-### **4. Podcast → Notes** 🎧 *(Planned)*
+### **4. Podcast → Notes** 🎧 ✅ FERTIG!
 **Problem:** Podcast insights lost after listening  
 **Solution:** Auto-transcribe + AI summary → searchable notes  
-**Status:** 📋 Week 6-7 (Feb 23 - Mar 8)
+**Status:** 🚀 Published (2026-01-19)
 
 ---
 
@@ -56,10 +56,10 @@ Build high-quality, open-source AI agent skills that solve real problems. Start 
 |-------|--------|----------------|
 | Smart Reminders Analyzer | ✅ Fertig | 122 → 119 reminders |
 | Meeting Prep Assistant | ✅ Fertig | 6 meetings prepared |
-| Knowledge Sync | 🔨 In Progress | Audible library synced |
-| Podcast → Notes | 📋 Planned | - |
+| Knowledge Sync | ✅ Fertig | Audible library synced |
+| Podcast → Notes | ✅ Fertig | YouTube → Obsidian tested |
 
-**Phase 1 Progress:** 2/4 Skills Fertig (50%)
+**Phase 1 Progress:** 4/4 Skills Fertig (100%) 🚀
 
 ---
 
