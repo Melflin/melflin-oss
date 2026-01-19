@@ -2,7 +2,15 @@
 
 AI-powered bulk analysis and cleanup for Apple Reminders. Clean up cluttered reminder lists in seconds, not weeks.
 
-[![GitHub stars](https://img.shields.io/github/stars/Melfelf/Melflin?style=flat-square)](https://github.com/Melfelf/Melflin/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/melflin/melflin-oss?style=flat-square&logo=github)](https://github.com/melflin/melflin-oss/stargazers)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green?style=flat-square)](https://nodejs.org/)
+[![macOS](https://img.shields.io/badge/macOS-12+-black?style=flat-square)](https://www.apple.com/macos/)
+
+---
+
+**⭐ If this helps you, please star the repo to support the project!**
+
+---
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green?style=flat-square)](https://nodejs.org/)
 [![macOS](https://img.shields.io/badge/macOS-12+-black?style=flat-square)](https://www.apple.com/macos/)
 [![npm](https://img.shields.io/badge/npm-v1.0.0-blue?style=flat-square)](https://npmjs.com/)
