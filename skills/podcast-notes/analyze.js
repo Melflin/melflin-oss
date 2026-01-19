@@ -113,6 +113,51 @@ async function extractInsightsWithMiniMax(transcript) {
   }
 }
 
+/**
+ * Auto-tagging system: Extract topics and themes from transcript
+ */
+function autoTagging(transcript, insights) {
+  console.log('🏷️ Running auto-tagging...');
+
+  // Common podcast topics database
+  const topicKeywords = {
+    'productivity': ['habit', 'focus', 'time', 'schedule', '效率', 'routine', 'productive'],
+    'technology': ['AI', 'software', 'code', 'tech', 'machine learning', 'computer', 'app'],
+    'health': ['health', 'fitness', 'exercise', 'diet', 'sleep', 'wellness', '身体'],
+    'finance': ['money', 'invest', 'wealth', 'finance', 'income', 'saving', 'financial'],
+    'relationships': ['relationship', 'family', 'friends', 'marriage', 'dating', 'social'],
+    'leadership': ['leadership', 'team', 'management', 'strategy', 'vision', 'leader'],
+    'learning': ['learn', 'book', 'study', 'education', 'knowledge', 'skill', 'course'],
+    'creativity': ['creative', 'art', 'music', 'design', 'write', 'creative', 'idea'],
+    'mindset': ['mindset', 'think', 'believe', 'mental', 'psychology', 'growth', '信念'],
+    'career': ['career', 'job', 'work', 'business', 'startup', 'company', 'profession']
+  };
+
+  const transcriptLower = transcript.toLowerCase();
+  const detectedTags = new Set(['podcast', 'podcast-notes']); // Base tags
+
+  // Detect topics from keywords
+  Object.entries(topicKeywords).forEach(([tag, keywords]) => {
+    keywords.forEach(keyword => {
+      if (transcriptLower.includes(keyword.toLowerCase())) {
+        detectedTags.add(tag);
+      }
+    });
+  });
+
+  // Add tags from AI insights if available
+  if (insights && insights.topics) {
+    insights.topics.forEach(topic => {
+      const normalizedTopic = topic.toLowerCase().replace(/\s+/g, '-');
+      detectedTags.add(normalizedTopic);
+    });
+  }
+
+  const tags = Array.from(detectedTags);
+  console.log(`✅ Auto-tagging complete: ${tags.length} tags found`);
+  return tags;
+}
+
 function getMockInsights() {
   return {
     insights: [
@@ -161,9 +206,10 @@ async function main() {
   try {
     const transcriptData = await transcribe();
     const analysis = await extractInsights(transcriptData.transcript);
+    const tags = autoTagging(transcriptData.transcript, analysis);
 
     if (jsonFlag) {
-      console.log(JSON.stringify({ transcript: transcriptData, analysis }, null, 2));
+      console.log(JSON.stringify({ transcript: transcriptData, analysis, tags }, null, 2));
     } else {
       console.log('\n📝 Transcript Preview:');
       console.log(transcriptData.transcript.substring(0, 500) + '...');
@@ -172,6 +218,9 @@ async function main() {
       analysis.insights.forEach((insight, i) => {
         console.log(`  ${i + 1}. ${insight}`);
       });
+
+      console.log('\n🏷️ Auto-Tags:');
+      tags.forEach(tag => console.log(`  #${tag}`));
 
       console.log('\n✅ Analysis complete!');
       console.log(`📊 Duration: ${transcriptData.duration}`);
