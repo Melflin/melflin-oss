@@ -2,6 +2,8 @@
 
 **Auto-generated briefing for upcoming meetings**
 
+[![GitHub Stars](https://img.shields.io/github/stars/melflin/melflin-oss?style=flat-square&logo=github)](https://github.com/melflin/melflin-oss/stargazers)
+
 ## 🎬 Demo
 
 ![Meeting Prep Demo](https://github.com/melflin/melflin-oss/raw/master/skills/meeting-prep-assistant/demo-preview.png)

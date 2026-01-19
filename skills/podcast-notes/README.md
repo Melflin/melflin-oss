@@ -2,6 +2,8 @@
 
 Transform podcasts and YouTube videos into structured Obsidian notes with AI-powered transcription and insight extraction.
 
+[![GitHub Stars](https://img.shields.io/github/stars/melflin/melflin-oss?style=flat-square&logo=github)](https://github.com/melflin/melflin-oss/stargazers)
+
 ## 🎬 Demo
 
 ![Podcast → Notes Demo](https://github.com/melflin/melflin-oss/raw/master/skills/podcast-notes/demo-preview.png)

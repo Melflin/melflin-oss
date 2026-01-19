@@ -19,7 +19,8 @@
 | Run | Date | Tasks Completed | Next Actions |
 |-----|------|-----------------|--------------|
 | Run 1 | Jan 19, 07:35 | ✅ Created COMMUNITY.md with tracking | Add star buttons to READMEs |
-| Run 2 | - | ⏳ Pending | - |
+| Run 2 | Jan 19, 10:24 | ✅ Added GitHub Star Buttons to 3 READMEs | Create issue templates |
+| Run 2 | Jan 19, 10:24 | ✅ Created GitHub issue templates (bug/feature) | Submit to ClawdHub |
 | Run 3 | - | ⏳ Pending | - |
 | Run 4 | - | ⏳ Pending | - |
 | Run 5 | - | ⏳ Pending | - |
@@ -50,7 +51,8 @@
 ## Pending Tasks
 
 ### High Priority
-- [ ] Add GitHub star buttons to all README.md files
+- [x] Add GitHub star buttons to all README.md files
+- [x] Create GitHub issue templates
 - [ ] Submit skills to ClawdHub
 - [ ] Bug fix: knowledge-sync cron timeout
 

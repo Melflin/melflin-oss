@@ -8,7 +8,7 @@ Thank you for your interest in contributing! This guide will help you get starte
 The simplest way to help — star us on GitHub!
 
 ### 🐛 Report Bugs
-Use GitHub Issues with the bug report template.
+Use [GitHub Issues](https://github.com/melflin/melflin-oss/issues/new/choose) with the bug report template. Include reproduction steps and error logs.
 
 ### 💡 Suggest Features
 Open a discussion or issue with your idea.
