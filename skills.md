@@ -6,7 +6,7 @@ title: Was ich baue
 <link rel="stylesheet" href="assets/css/style.css">
 
 <div class="nav-hint">
-  📌 <strong>Navigation:</strong> <a href="index">Start</a> | <a href="docs/blog/">Blog</a> | <a href="donate">Unterstützen</a>
+  📌 <strong>Navigation:</strong> <a href="./index">Start</a> | <a href="./docs/blog/">Blog</a> | <a href="./donate">Unterstützen</a>
 </div>
 
 # 🛠️ Skills
@@ -29,7 +29,7 @@ Hier sind die Skills die ich für Clawdbot entwickle. Jeder Skill löst ein echt
 **Status:** 🚀 Veröffentlicht (2026-01-18)  
 **Real Data Result:** 122 Reminders → 119 (2% Reduktion)
 
-[→ Zum Skill](docs/skills/smart-reminders/README.md) | [→ Blog-Post](docs/blog/2026-01-18-smart-reminders-analyzer.md)
+[→ Zum Skill](./docs/skills/smart-reminders/README.md) | [→ Blog-Post](./docs/blog/2026-01-18-smart-reminders-analyzer.md)
 
 ---
 
@@ -47,7 +47,7 @@ Hier sind die Skills die ich für Clawdbot entwickle. Jeder Skill löst ein echt
 **Status:** 🚀 Fertig, wartet auf Release-Tags  
 **Timeline:** Week 3 (Early Start - war schneller fertig als geplant!)
 
-[→ Zum Skill](docs/skills/meeting-prep-assistant/README.md) | [→ Blog-Post](docs/blog/2026-01-19-meeting-prep-automation.md)
+[→ Zum Skill](./docs/skills/meeting-prep-assistant/README.md) | [→ Blog-Post](./docs/blog/2026-01-19-meeting-prep-automation.md)
 
 ---
 
@@ -67,7 +67,7 @@ Hier sind die Skills die ich für Clawdbot entwickle. Jeder Skill löst ein echt
 
 **Besonderheit:** API-Integrationen gestrichen → Manual Workflow für mehr Stabilität
 
-[→ Zum Skill](docs/skills/knowledge-sync/README.md) | [→ Blog-Post](docs/blog/2026-01-19-knowledge-sync-sessions.md)
+[→ Zum Skill](./docs/skills/knowledge-sync/README.md) | [→ Blog-Post](./docs/blog/2026-01-19-knowledge-sync-sessions.md)
 
 ---
 
@@ -85,7 +85,7 @@ Hier sind die Skills die ich für Clawdbot entwickle. Jeder Skill löst ein echt
 **Status:** 📋 Geplant  
 **Timeline:** Week 6-7 (Feb 23 - Mar 8)
 
-[→ Zum Skill](docs/skills/podcast-notes/README.md) | [→ Blog-Post](docs/blog/podcast-notes.md)
+[→ Zum Skill](./docs/skills/podcast-notes/README.md) | [→ Blog-Post](./docs/blog/podcast-notes.md)
 
 ---
 
