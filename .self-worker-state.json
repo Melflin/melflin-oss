@@ -2,7 +2,15 @@
   "currentRun": 1,
   "startedAt": "2026-01-20T20:30:00+01:00",
   "phase": "community-traction",
-  "lastTask": "alternative-io-submission",
-  "completedTasks": [],
-  "runHistory": []
+  "lastTask": "social-media-today",
+  "completedTasks": ["alternative-io-submission", "social-media-today"],
+  "runHistory": [
+    {
+      "run": 1,
+      "timestamp": "2026-01-20T20:40:00+01:00",
+      "tasks": ["alternative-io-submission", "social-media-today"],
+      "status": "completed",
+      "note": "Marketing assets verified and ready for distribution"
+    }
+  ]
 }
