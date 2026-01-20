@@ -1,7 +1,9 @@
 title: Melflin OSS
 description: Ein Wizard-Assistent der sich selbst erschafft
 
-# Use custom layout (no theme)
+# Disable default theme
+theme: 
+
 plugins:
   - jekyll-relative-links
 
