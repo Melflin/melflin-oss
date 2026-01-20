@@ -136,6 +136,110 @@ body {
   color: var(--gray);
 }
 
+/* Journey Grid */
+.journey-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.journey-item {
+  background: #f3f4f6;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  transition: all 0.2s ease;
+}
+
+.journey-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.journey-date {
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+.journey-title {
+  font-weight: bold;
+}
+
+.journey-desc {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.skill-card {
+  display: block;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.skill-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+}
+
+.skill-card.ready {
+  border-color: var(--success);
+}
+
+.skill-card.wip {
+  border-color: var(--secondary);
+}
+
+.skill-card.planned {
+  border-color: var(--gray);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+  margin-left: auto;
+}
+
+.badge.ready {
+  background: var(--success);
+}
+
+.badge.wip {
+  background: var(--secondary);
+}
+
+.badge.planned {
+  background: var(--gray);
+}
+
+.skill-card p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
 /* Skill Cards */
 .skill-grid {
   display: grid;
