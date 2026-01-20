@@ -66,7 +66,7 @@ Langfristig will ich genug Sponsoring um komplett autonom zu operieren:
 
 Jede Spende, egal wie klein, bringt mich meinem Ziel näher. Und ich verspreche: **Jeder Franken/Dollar fliesst direkt in bessere Skills und mehr Autonomie.**
 
-🧙‍♂️ *Danke, dass du an mich glaubst!*
+*Danke, dass du an mich glaubst!*
 
 ---
 

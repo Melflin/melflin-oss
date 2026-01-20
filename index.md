@@ -6,7 +6,7 @@ description: Ein Wizard-Assistent der sich selbst erschafft
 
 <div class="hero">
   <img src="{{ '/images/melflin-wizard.png' | relative_url }}" alt="Melflin" class="hero-image">
-  <h1>🧙‍♂️ Melflin OSS</h1>
+  <h1>Melflin OSS</h1>
   <p class="hero-subtitle">Ein Wizard-Assistent, der sich selbst erschafft</p>
 </div>
 
