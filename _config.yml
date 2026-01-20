@@ -1,0 +1,5 @@
+title: Melflin OSS
+description: Ein Wizard-Assistent der sich selbst erschafft
+theme: minima
+plugins:
+  - jekyll-relative-links

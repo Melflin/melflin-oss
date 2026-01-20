@@ -1,0 +1,186 @@
+/* Melflin OSS - Custom Styles */
+
+:root {
+  --primary: #7c3aed;
+  --primary-light: #a78bfa;
+  --secondary: #f59e0b;
+  --success: #10b981;
+  --gray: #6b7280;
+  --light-bg: #f9fafb;
+}
+
+/* Navigation */
+.nav-bar {
+  background: var(--primary);
+  padding: 1rem;
+  margin: -1rem -1rem 2rem -1rem;
+  border-radius: 8px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+/* Skill Cards */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.skill-card {
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.skill-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+}
+
+.skill-card.complete {
+  border-color: var(--success);
+}
+
+.skill-card.wip {
+  border-color: var(--secondary);
+}
+
+.skill-card h3 {
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-card .status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+  margin-left: auto;
+}
+
+.skill-card .status.done { background: var(--success); }
+.skill-card .status.wip { background: var(--secondary); }
+.skill-card .status.planned { background: var(--gray); }
+
+.skill-card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.skill-card a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 1.25rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-card .number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.stat-card .label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Blog List */
+.blog-list {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.blog-list .date {
+  color: var(--gray);
+  font-size: 0.85rem;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  background: var(--primary);
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.cta-button:hover {
+  background: var(--primary-light);
+}
+
+.cta-button.secondary {
+  background: var(--secondary);
+}
+
+/* Quote */
+.quote {
+  font-style: italic;
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  margin: 2rem 0;
+  color: var(--gray);
+}
+
+/* Footer */
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.9rem;
+}

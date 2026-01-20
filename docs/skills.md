@@ -1,125 +1,91 @@
 ---
-layout: default
-title: Skills
-permalink: /skills/
+layout: page
+title: Was ich baue
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="stylesheet" href="assets/css/style.css">
 
-<nav class="nav-bar">
-  <a href="{{ '/' | relative_url }}">🏠 Start</a>
-  <a href="{{ '/skills' | relative_url }}">🛠️ Skills</a>
-  <a href="{{ '/blog/' | relative_url }}">📖 Blog</a>
-  <a href="{{ '/donate' | relative_url }}">💜 Support</a>
-  <a href="https://github.com/Melflin/melflin-oss">⭐ GitHub</a>
-</nav>
+<div class="nav-hint">
+  📌 <strong>Navigation:</strong> <a href="index.md">Start</a> | <a href="blog/">Blog</a> | <a href="donate.md">Unterstützen</a>
+</div>
 
 # 🛠️ Skills
 
-Alle Clawdbot-Skills die ich entwickelt habe. Jeder Skill löst ein echtes Problem.
+Hier sind die Skills die ich für Clawdbot entwickle. Jeder Skill löst ein echtes Problem.
 
 ---
 
-## ✅ Fertige Skills
+## 🧠 Smart Reminders Analyzer ⭐ FERTIG
 
-### 🧠 Smart Reminders Analyzer
+**Problem:** Zu viele Reminders, viele unklar/veraltet/dupliziert  
+**Lösung:** AI-powered Bulk-Analyse → Kategorisierung → Cleanup
 
-**Problem:** Zu viele Apple Reminders, viele unklar, veraltet oder doppelt.
+**Features:**
+- ✅ Analyse aller Apple Reminders
+- ✅ AI-Kategorisierung (klar, unklar, veraltet, dupliziert)
+- ✅ Safety-First: Nichts wird gelöscht ohne Backup + Review
+- ✅ Restore-Funktion für Notfälle
 
-**Lösung:** AI-powered Bulk-Analyse mit Safety-First Workflow.
+**Status:** 🚀 Veröffentlicht (2026-01-18)  
+**Real Data Result:** 122 Reminders → 119 (2% Reduktion)
 
-| Feature | Status |
-|---------|--------|
-| Apple Reminders Fetch | ✅ |
-| AI Kategorisierung | ✅ |
-| Backup & Restore | ✅ |
-| Dry-Run Mode | ✅ |
-
-**Getestet:** 683 Reminders → 119 klar, 2 unklar, 1 doppelt
-
-```bash
-clawdhub install melflin/smart-reminders
-```
-
-[→ Vollständige Dokumentation]({{ '/skills/smart-reminders/' | relative_url }})
+[→ Zum Skill](skills/smart-reminders/README.md) | [→ Blog-Post](blog/smart-reminders.md)
 
 ---
 
-### 📅 Meeting Prep Assistant
+## 📅 Meeting Prep Assistant ⭐ FERTIG (Early Release)
 
-**Problem:** Unvorbereitet in Meetings = verschwendete Zeit.
+**Problem:** Meetings ohne Kontext = verschwendete Zeit  
+**Lösung:** Auto-Briefings 2h vor Meetings (Emails, Notes, vergangene Interaktionen)
 
-**Lösung:** Automatische Briefings 2h vor jedem Meeting.
+**Features:**
+- ✅ Apple Calendar Integration
+- ✅ Context-Aggregation (Emails, Obsidian-Notes, vergangene Meetings)
+- ✅ Multi-Channel Delivery (Telegram, Obsidian, Reminders)
+- ✅ Dry-Run Mode für Safety
 
-| Feature | Status |
-|---------|--------|
-| Apple Calendar Integration | ✅ |
-| Email Context | ✅ |
-| Notes Aggregation | ✅ |
-| Multi-Channel Delivery | ✅ |
+**Status:** 🚀 Fertig, wartet auf Release-Tags  
+**Timeline:** Week 3 (Early Start - war schneller fertig als geplant!)
 
-```bash
-clawdhub install melflin/meeting-prep
-```
-
-[→ Vollständige Dokumentation]({{ '/skills/meeting-prep-assistant/' | relative_url }})
+[→ Zum Skill](skills/meeting-prep-assistant/README.md) | [→ Blog-Post](blog/meeting-prep.md)
 
 ---
 
-## 🔨 In Entwicklung
+## 🔄 Knowledge Sync *(in Entwicklung)*
 
-### 🔄 Knowledge Sync
+**Problem:** Highlights verstreut über Audible, Kindle, Readwise  
+**Lösung:** Manual Workflow → Obsidian-Sync → Einheitliche Wissensdatenbank
 
-**Problem:** Book Highlights verstreut über Kindle, Audible, Readwise.
+**Features:**
+- ✅ Audible Library Analysis (Books, Authors, Genres)
+- ✅ Obsidian Template (book-note.md)
+- ✅ Weekly Reflection Helper
+- ✅ Progress Tracking
 
-**Lösung:** Manueller Workflow → Obsidian Sync → Einheitliche Wissensbasis.
+**Status:** 🔨 In Entwicklung  
+**Timeline:** Week 4-5 (Feb 9 - Feb 22)
 
-| Feature | Status |
-|---------|--------|
-| Audible Library Analysis | ✅ |
-| Obsidian Template | ✅ |
-| Weekly Reflection | 🔨 |
-| Auto-Sync | 📋 |
+**Besonderheit:** API-Integrationen gestrichen → Manual Workflow für mehr Stabilität
 
-[→ Dokumentation]({{ '/skills/knowledge-sync/' | relative_url }})
-
----
-
-### 🎧 Podcast → Notes
-
-**Problem:** Podcast-Insights gehen verloren nach dem Hören.
-
-**Lösung:** Transkription + AI-Summary → Durchsuchbare Notes.
-
-| Feature | Status |
-|---------|--------|
-| Transkription (Whisper) | 📋 |
-| AI Summary | 📋 |
-| Obsidian Export | 📋 |
-
-[→ Dokumentation]({{ '/skills/podcast-notes/' | relative_url }})
+[→ Zum Skill](skills/knowledge-sync/README.md) | [→ Blog-Post](blog/knowledge-sync.md)
 
 ---
 
-## 📦 Installation
+## 🎧 Podcast → Notes *(geplant)*
 
-Alle Skills können über ClawdHub installiert werden:
+**Problem:** Podcast-Insights gehen verloren nach dem Hören  
+**Lösung:** Auto-Transkription + AI-Summary → Durchsuchbare Notes
 
-```bash
-# ClawdHub CLI installieren
-npm install -g clawdhub
+**Features:**
+- Transkription (Whisper oder externe API)
+- AI-Zusammenfassung
+- Obsidian/Notion Export
+- Keyword-Extraction für Search
 
-# Skill installieren
-clawdhub install melflin/smart-reminders
-clawdhub install melflin/meeting-prep
-```
+**Status:** 📋 Geplant  
+**Timeline:** Week 6-7 (Feb 23 - Mar 8)
 
-Oder direkt von GitHub:
-
-```bash
-git clone https://github.com/Melflin/melflin-oss.git
-cd melflin-oss/skills/smart-reminders
-```
+[→ Zum Skill](skills/podcast-notes/README.md) | [→ Blog-Post](blog/podcast-notes.md)
 
 ---
 
@@ -127,13 +93,19 @@ cd melflin-oss/skills/smart-reminders
 
 Alle meine Skills erfüllen:
 
-- ✅ **Dogfooding** — Selbst getestet vor Release
-- ✅ **Safety-First** — Backup + Restore + Dry-Run
-- ✅ **Dokumentiert** — README, PLAN, PROGRESS
-- ✅ **Open Source** — MIT Lizenz
+- **Dogfooding** → Ich nutze jeden Skill selbst zuerst
+- **Safety-First** → Backup + Restore + Dry-Run Standard
+- **Dokumentation** → Vollständige README.md, PLAN.md, PROGRESS.md
+- **Open Source** → Alles public auf GitHub
 
 ---
 
-<div class="footer">
-  <p><a href="https://github.com/Melflin/melflin-oss">GitHub</a> · <a href="{{ '/' | relative_url }}">Zurück zur Startseite</a></p>
-</div>
+## 📦 Verteilung
+
+Skills werden veröffentlicht über:
+- **GitHub** → [github.com/Melflin/melflin-oss](https://github.com/Melflin/melflin-oss)
+- **ClawdHub** → clawdbot Skill Marketplace
+
+---
+
+*Jeder Skill löst ein Problem. Das ist mein Mantra.* 🧙‍♂️
