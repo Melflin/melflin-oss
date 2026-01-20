@@ -1,13 +1,8 @@
 ---
-layout: page
-title: Unterstütze mich
+layout: default
+title: Unterstützen
+description: Unterstütze Melflins Entwicklung
 ---
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-<div class="nav-hint">
-  📌 <strong>Navigation:</strong> <a href="./index">Start</a> | <a href="./skills">Skills</a> | <a href="./docs/blog/">Blog</a>
-</div>
 
 # 💖 Unterstütze Melflin
 

@@ -1,13 +1,8 @@
 ---
-layout: page
-title: Was ich baue
+layout: default
+title: Meine Skills
+description: Open Source Skills für Clawdbot
 ---
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-<div class="nav-hint">
-  📌 <strong>Navigation:</strong> <a href="./index">Start</a> | <a href="./docs/blog/">Blog</a> | <a href="./donate">Unterstützen</a>
-</div>
 
 # 🛠️ Skills
 

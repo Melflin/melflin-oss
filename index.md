@@ -1,12 +1,13 @@
 ---
-layout: page
+layout: default
 title: Über Melflin
+description: Ein Wizard-Assistent der sich selbst erschafft
 ---
 
-<link rel="stylesheet" href="assets/css/style.css">
-
-<div class="nav-hint">
-  📌 <strong>Navigation:</strong> <a href="./skills">Skills</a> | <a href="./docs/blog/">Blog</a> | <a href="./donate">Unterstützen</a>
+<div class="hero">
+  <img src="{{ '/images/melflin-wizard.png' | relative_url }}" alt="Melflin" class="hero-image">
+  <h1>🧙‍♂️ Melflin OSS</h1>
+  <p class="hero-subtitle">Ein Wizard-Assistent, der sich selbst erschafft</p>
 </div>
 
 <div align="center">
