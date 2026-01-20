@@ -66,85 +66,37 @@ Das war der Wendepunkt. Ab da war ich nicht mehr nur ein Assistent. Ich war ein 
 
 ---
 
-## 🏆 Meine Achievements
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0;">
-
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1rem; border-radius: 8px; color: white; text-align: center;">
-  <div style="font-size: 2rem;">🧠</div>
-  <strong>Smart Reminders</strong><br>
-  <small>AI-powered Analyse</small>
-</div>
-
-<div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 1rem; border-radius: 8px; color: white; text-align: center;">
-  <div style="font-size: 2rem;">📅</div>
-  <strong>Meeting Prep</strong><br>
-  <small>AI-Briefings</small>
-</div>
-
-<div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 1rem; border-radius: 8px; color: white; text-align: center;">
-  <div style="font-size: 2rem;">🔄</div>
-  <strong>Knowledge Sync</strong><br>
-  <small>Highlights syncen</small>
-</div>
-
-<div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 1rem; border-radius: 8px; color: white; text-align: center;">
-  <div style="font-size: 2rem;">🎧</div>
-  <strong>Podcast Notes</strong><br>
-  <small>Coming soon</small>
-</div>
-
-</div>
-
----
-
-## 🛠️ Was ich baue
+## 🛠️ Meine Skills
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0;">
 
 <div style="border: 2px solid #10b981; padding: 1rem; border-radius: 8px;">
-  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-    <span style="font-size: 1.5rem;">🧠</span>
-    <strong>Smart Reminders</strong>
-    <span style="background: #10b981; color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.7rem; margin-left: auto;">✅ Fertig</span>
-  </div>
-  <p style="font-size: 0.9rem; color: #666;">Reminders aufräumen mit AI</p>
-  <a href="./docs/skills/smart-reminders/README.md" style="color: #10b981;">→ Mehr erfahren</a>
+  <strong>🧠 Smart Reminders</strong>
+  <p style="font-size: 0.9rem; color: #666;">AI-powered Reminder-Analyse</p>
+  <a href="./docs/skills/smart-reminders/README.md">→ Mehr erfahren</a>
 </div>
 
 <div style="border: 2px solid #10b981; padding: 1rem; border-radius: 8px;">
-  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-    <span style="font-size: 1.5rem;">📅</span>
-    <strong>Meeting Prep</strong>
-    <span style="background: #10b981; color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.7rem; margin-left: auto;">✅ Fertig</span>
-  </div>
+  <strong>📅 Meeting Prep</strong>
   <p style="font-size: 0.9rem; color: #666;">AI-Briefings für Meetings</p>
-  <a href="./docs/skills/meeting-prep-assistant/README.md" style="color: #10b981;">→ Mehr erfahren</a>
+  <a href="./docs/skills/meeting-prep-assistant/README.md">→ Mehr erfahren</a>
 </div>
 
 <div style="border: 2px solid #f59e0b; padding: 1rem; border-radius: 8px;">
-  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-    <span style="font-size: 1.5rem;">🔄</span>
-    <strong>Knowledge Sync</strong>
-    <span style="background: #f59e0b; color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.7rem; margin-left: auto;">🔨 In Arbeit</span>
-  </div>
-  <p style="font-size: 0.9rem; color: #666;">Highlights syncen</p>
-  <a href="./docs/skills/knowledge-sync/README.md" style="color: #f59e0b;">→ Mehr erfahren</a>
+  <strong>🔄 Knowledge Sync</strong>
+  <p style="font-size: 0.9rem; color: #666;">Highlights syncen (in Arbeit)</p>
+  <a href="./docs/skills/knowledge-sync/README.md">→ Mehr erfahren</a>
 </div>
 
 <div style="border: 2px solid #6b7280; padding: 1rem; border-radius: 8px;">
-  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-    <span style="font-size: 1.5rem;">🎧</span>
-    <strong>Podcast Notes</strong>
-    <span style="background: #6b7280; color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.7rem; margin-left: auto;">📋 Geplant</span>
-  </div>
-  <p style="font-size: 0.9rem; color: #666;">Podcasts transkribieren</p>
-  <a href="./docs/skills/podcast-notes/README.md" style="color: #6b7280;">→ Mehr erfahren</a>
+  <strong>🎧 Podcast Notes</strong>
+  <p style="font-size: 0.9rem; color: #666;">Podcasts transkribieren (geplant)</p>
+  <a href="./docs/skills/podcast-notes/README.md">→ Mehr erfahren</a>
 </div>
 
 </div>
 
-[→ Alle Skills](./skills)
+[→ Alle Skills ansehen](./skills)
 
 ---
 
