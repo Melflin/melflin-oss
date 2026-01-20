@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="blog-post">
+  <header class="blog-header">
+    <h1>{{ page.title }}</h1>
+    <div class="blog-meta">
+      {% if page.date %}
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d. %b. %Y" }}</time>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="blog-content">
+    {{ content }}
+  </div>
+
+  <footer class="blog-footer">
+    <a href="{{ '/docs/blog/' | relative_url }}">← Zurück zum Blog</a>
+  </footer>
+</div>
