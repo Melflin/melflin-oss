@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Reminders Analyzer - Screenshot</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1e1e1e;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', monospace;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .terminal {
+      background: #1e1e1e;
+      border-radius: 8px;
+      max-width: 700px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+    .header {
+      background: #2d2d2d;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn { width: 12px; height: 12px; border-radius: 50%; }
+    .btn-red { background: #ff5f56; }
+    .btn-yellow { background: #ffbd2e; }
+    .btn-green { background: #27c93f; }
+    .title { color: #888; font-size: 13px; margin-left: 10px; }
+    .content { padding: 15px; color: #ccc; font-size: 13px; line-height: 1.6; }
+    .line { margin: 4px 0; }
+    .prompt { color: #27c93f; }
+    .cmd { color: #61afef; }
+    .output { color: #98c379; }
+    .warning { color: #e5c07b; }
+    .error { color: #e06c75; }
+    .purple { color: #c678dd; }
+    .blue { color: #61afef; }
+    .green { color: #98c379; }
+    .yellow { color: #e5c07b; }
+    .gray { color: #5c6370; }
+    .progress { display: flex; gap: 3px; }
+    .bar { width: 3px; height: 16px; background: #27c93f; animation: pulse 1s infinite; }
+    .bar:nth-child(2) { animation-delay: 0.2s; }
+    .bar:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="header">
+      <div class="btn btn-red"></div>
+      <div class="btn btn-yellow"></div>
+      <div class="btn btn-green"></div>
+      <span class="title">Smart Reminders Analyzer</span>
+    </div>
+    <div class="content">
+      <div class="line"><span class="prompt">$</span> <span class="cmd">melflin-smart-reminders --analyze</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="purple">🧠</span> <span class="purple">Smart Reminders Analyzer</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="gray">📥</span> Lade Reminders...</div>
+      <div class="line"><span class="green">✅</span> <span class="output">122 aktive Reminders geladen</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="gray">🔍</span> Analysiere mit AI...</div>
+      <div class="line"><span class="progress"><div class="bar"></div><div class="bar"></div><div class="bar"></div></span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="blue">📊</span> <span class="blue">Analysis Summary</span></div>
+      <div class="line">   <span class="gray">Total:</span> <span class="output">122 active reminders</span></div>
+      <div class="line">   <span class="green">✅ Clear:</span> <span class="output">119 (98%)</span></div>
+      <div class="line">   <span class="yellow">⚠️ Unclear:</span> <span class="warning">2 (2%)</span></div>
+      <div class="line">   <span class="error">🗑️ Obsolete:</span> <span class="error">0 (0%)</span></div>
+      <div class="line">   <span class="purple">🔄 Duplicates:</span> <span class="purple">1 (1%)</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="yellow">💡</span> <span class="yellow">Empfehlung:</span> 2 unclear Reminders löschen</div>
+      <div class="line"><span class="output">📈 Result: 122 → 119 reminders (2% reduction)</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="prompt">$</span> <span class="cmd">melflin-smart-reminders --dry-run</span></div>
+      <div class="line"><span class="gray">📋 Vorschau der Änderungen...</span></div>
+      <div class="line"><span class="green">✓</span> 2 unclear Reminders zur Löschung markiert</div>
+    </div>
+  </div>
+</body>
+</html>

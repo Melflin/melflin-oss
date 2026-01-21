@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast Notes - Screenshot</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1e1e1e;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', monospace;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .terminal {
+      background: #1e1e1e;
+      border-radius: 8px;
+      max-width: 700px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+    .header {
+      background: #2d2d2d;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn { width: 12px; height: 12px; border-radius: 50%; }
+    .btn-red { background: #ff5f56; }
+    .btn-yellow { background: #ffbd2e; }
+    .btn-green { background: #27c93f; }
+    .title { color: #888; font-size: 13px; margin-left: 10px; }
+    .content { padding: 15px; color: #ccc; font-size: 13px; line-height: 1.6; }
+    .line { margin: 4px 0; }
+    .prompt { color: #27c93f; }
+    .cmd { color: #61afef; }
+    .output { color: #98c379; }
+    .purple { color: #c678dd; }
+    .blue { color: #61afef; }
+    .green { color: #98c379; }
+    .yellow { color: #e5c07b; }
+    .gray { color: #5c6370; }
+    .obsidian {
+      background: #2d2d2d;
+      border-radius: 6px;
+      padding: 12px;
+      margin: 8px 0;
+    }
+    .frontmatter {
+      color: #e5c07b;
+      font-size: 11px;
+      margin-bottom: 8px;
+    }
+    .obsidian-title { color: #e06c75; font-weight: bold; font-size: 14px; margin-bottom: 6px; }
+    .obsidian-section { color: #98c379; font-weight: bold; font-size: 11px; margin: 8px 0 4px; }
+    .obsidian-content { color: #abb2bf; font-size: 12px; }
+    .tags { display: flex; gap: 4px; flex-wrap: wrap; }
+    .tag { background: #3e4451; color: #98c379; padding: 2px 6px; border-radius: 3px; font-size: 10px; }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="header">
+      <div class="btn btn-red"></div>
+      <div class="btn btn-yellow"></div>
+      <div class="btn btn-green"></div>
+      <span class="title">Podcast Notes</span>
+    </div>
+    <div class="content">
+      <div class="line"><span class="prompt">$</span> <span class="cmd">podcast-notes "https://youtube.com/watch?v=xyz123"</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="purple">🎧</span> <span class="purple">Podcast Notes</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="gray">📥</span> Lade Audio...</div>
+      <div class="line"><span class="green">✅</span> Audio geladen (45 min)</div>
+      <div class="line"><span class="gray">🎙️</span> Transkribiere mit Whisper...</div>
+      <div class="line"><span class="green">✅</span> Transkription abgeschlossen</div>
+      <div class="line"><span class="gray">🤖</span> Generiere Zusammenfassung...</div>
+      <div class="line"><span class="green">✅</span> Note erstellt!</div>
+      <div class="line">&nbsp;</div>
+      <div class="obsidian">
+        <div class="frontmatter">---
+tags: podcast, productivity, habits
+created: 2026-01-21
+source: https://youtube.com/...
+duration: 45 min
+---</div>
+        <div class="obsidian-title"># 🎧 Podcast Notes</div>
+        <div class="obsidian-section">## Quelle</div>
+        <div class="obsidian-content">URL: youtube.com/watch?v=xyz123
+Duration: 45 min
+Date: 2026-01-21</div>
+        <div class="obsidian-section">## 💡 Key Insights</div>
+        <div class="obsidian-content">1. Fokus auf Systeme, nicht Ziele
+2. Environment designen für Erfolg
+3. Kleine Gewinne addieren sich</div>
+        <div class="obsidian-section">## 🏷️ Topics</div>
+        <div class="tags">
+          <span class="tag">#productivity</span>
+          <span class="tag">#habits</span>
+          <span class="tag">#mindset</span>
+        </div>
+      </div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="prompt">$</span> <span class="cmd">_</span></div>
+    </div>
+  </div>
+</body>
+</html>

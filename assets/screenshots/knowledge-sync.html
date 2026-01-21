@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Sync - Screenshot</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1e1e1e;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', monospace;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .terminal {
+      background: #1e1e1e;
+      border-radius: 8px;
+      max-width: 700px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+    .header {
+      background: #2d2d2d;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn { width: 12px; height: 12px; border-radius: 50%; }
+    .btn-red { background: #ff5f56; }
+    .btn-yellow { background: #ffbd2e; }
+    .btn-green { background: #27c93f; }
+    .title { color: #888; font-size: 13px; margin-left: 10px; }
+    .content { padding: 15px; color: #ccc; font-size: 13px; line-height: 1.6; }
+    .line { margin: 4px 0; }
+    .prompt { color: #27c93f; }
+    .cmd { color: #61afef; }
+    .output { color: #98c379; }
+    .purple { color: #c678dd; }
+    .blue { color: #61afef; }
+    .green { color: #98c379; }
+    .yellow { color: #e5c07b; }
+    .gray { color: #5c6370; }
+    .obsidian {
+      background: #2d2d2d;
+      border-radius: 6px;
+      padding: 12px;
+      margin: 8px 0;
+    }
+    .frontmatter {
+      color: #e5c07b;
+      font-size: 11px;
+      margin-bottom: 8px;
+    }
+    .obsidian-title { color: #e06c75; font-weight: bold; font-size: 14px; margin-bottom: 6px; }
+    .obsidian-section { color: #98c379; font-weight: bold; font-size: 11px; margin: 8px 0 4px; }
+    .obsidian-content { color: #abb2bf; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="header">
+      <div class="btn btn-red"></div>
+      <div class="btn btn-yellow"></div>
+      <div class="btn btn-green"></div>
+      <span class="title">Knowledge Sync</span>
+    </div>
+    <div class="content">
+      <div class="line"><span class="prompt">$</span> <span class="cmd">knowledge-sync add --title "Atomic Habits" --author "James Clear"</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="purple">🔄</span> <span class="purple">Knowledge Sync</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="gray">📚</span> Erstelle Obsidian Note...</div>
+      <div class="line"><span class="green">✅</span> <span class="output">Note erstellt!</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="prompt">$</span> <span class="cmd">knowledge-sync list</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="gray">Alle Bücher:</span></div>
+      <div class="line"><span class="blue">📖</span> Atomic Habits - James Clear <span class="yellow">⭐⭐⭐⭐⭐</span></div>
+      <div class="line"><span class="blue">📖</span> Deep Work - Cal Newport <span class="yellow">⭐⭐⭐⭐</span></div>
+      <div class="line"><span class="blue">📖</span> The Psychology of Money <span class="yellow">⭐⭐⭐⭐⭐</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="prompt">$</span> <span class="cmd">knowledge-sync review</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="gray">📅</span> Wöchentliches Review (letzte 30 Tage):</div>
+      <div class="line">&nbsp;</div>
+      <div class="obsidian">
+        <div class="frontmatter">---
+title: "Atomic Habits"
+author: "James Clear"
+format: "audiobook"
+date_added: 2026-01-19
+tags: productivity, habits, psychology
+rating: ⭐⭐⭐⭐⭐
+---</div>
+        <div class="obsidian-title"># Atomic Habits</div>
+        <div class="obsidian-section">## Key Takeaways</div>
+        <div class="obsidian-content">1. Kleine Änderungen = Große Ergebnisse
+2. Habits stacken
+3. Environment designen</div>
+        <div class="obsidian-section">## Persönliche Notes</div>
+        <div class="obsidian-content">- ...</div>
+      </div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="prompt">$</span> <span class="cmd">_</span></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Prep Assistant - Screenshot</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1e1e1e;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', monospace;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .terminal {
+      background: #1e1e1e;
+      border-radius: 8px;
+      max-width: 700px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+    .header {
+      background: #2d2d2d;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn { width: 12px; height: 12px; border-radius: 50%; }
+    .btn-red { background: #ff5f56; }
+    .btn-yellow { background: #ffbd2e; }
+    .btn-green { background: #27c93f; }
+    .title { color: #888; font-size: 13px; margin-left: 10px; }
+    .content { padding: 15px; color: #ccc; font-size: 13px; line-height: 1.6; }
+    .line { margin: 4px 0; }
+    .prompt { color: #27c93f; }
+    .cmd { color: #61afef; }
+    .output { color: #98c379; }
+    .warning { color: #e5c07b; }
+    .purple { color: #c678dd; }
+    .blue { color: #61afef; }
+    .green { color: #98c379; }
+    .yellow { color: #e5c07b; }
+    .gray { color: #5c6370; }
+    .section { border-left: 2px solid #3e4451; padding-left: 12px; margin: 8px 0; }
+    .section-title { color: #e06c75; font-weight: bold; margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="header">
+      <div class="btn btn-red"></div>
+      <div class="btn btn-yellow"></div>
+      <div class="btn btn-green"></div>
+      <span class="title">Meeting Prep Assistant</span>
+    </div>
+    <div class="content">
+      <div class="line"><span class="prompt">$</span> <span class="cmd">melflin-meeting-prep --hours=24</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="purple">📅</span> <span class="purple">Meeting Prep Assistant</span></div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="gray">📋</span> Meetings in den nächsten 24h:</div>
+      <div class="line">&nbsp;</div>
+      <div class="section">
+        <div class="section-title">## 📅 Weekly Team Sync</div>
+        <div class="line"><span class="gray">🕐</span> Mo 20.01.2026, 14:00</div>
+        <div class="line"><span class="gray">📍</span> Zoom</div>
+      </div>
+      <div class="line">&nbsp;</div>
+      <div class="section">
+        <div class="section-title">### 👥 Teilnehmer</div>
+        <div class="line"><span class="output">Team A, Team B, Sarah, John</span></div>
+      </div>
+      <div class="line">&nbsp;</div>
+      <div class="section">
+        <div class="section-title">### 📧 Zugehörige Emails</div>
+        <div class="line"><span class="green">●</span> 19.01.2026 - John: <span class="output">Agenda für Weekly Sync</span></div>
+        <div class="line"><span class="yellow">✓</span> 18.01.2026 - Jane: <span class="output">Updates zur Feature X</span></div>
+      </div>
+      <div class="line">&nbsp;</div>
+      <div class="section">
+        <div class="section-title">### 🎯 Prep-Punkte</div>
+        <div class="line">- [ ] Meeting-Ziel klären</div>
+        <div class="line">- [ ] Agenda-Punkte vorbereiten</div>
+        <div class="line">- [ ] Updates von letztem Meeting einbringen</div>
+      </div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><span class="prompt">$</span> <span class="cmd">_</span></div>
+    </div>
+  </div>
+</body>
+</html>
