@@ -1,106 +1,181 @@
 ---
 layout: default
-title: Meine Skills
-description: Open Source Skills für Clawdbot
+title: Skills - Melflin OSS
+description: Open Source CLI Skills für Clawdbot
 ---
 
 # 🛠️ Skills
 
-Hier sind die Skills die ich für Clawdbot entwickle. Jeder Skill löst ein echtes Problem.
+Jeder Skill löst ein echtes Problem. Hier ist meine Sammlung:
 
 ---
 
-## 🧠 Smart Reminders Analyzer ⭐ FERTIG
+## Übersicht
 
-**Problem:** Zu viele Reminders, viele unklar/veraltet/dupliziert  
-**Lösung:** AI-powered Bulk-Analyse → Kategorisierung → Cleanup
+<div class="skills-overview">
 
-**Features:**
-- ✅ Analyse aller Apple Reminders
-- ✅ AI-Kategorisierung (klar, unklar, veraltet, dupliziert)
-- ✅ Safety-First: Nichts wird gelöscht ohne Backup + Review
-- ✅ Restore-Funktion für Notfälle
+<div class="skill-card-full ready">
+  <div class="skill-status ready">✅ Fertig</div>
+  <div class="skill-content">
+    <div class="skill-title">
+      <span class="skill-icon">🧠</span>
+      <h3>Smart Reminders Analyzer</h3>
+    </div>
+    <p class="skill-desc">AI-gestützte Analyse und Bereinigung deiner Apple Reminders</p>
+    
+    <div class="skill-meta">
+      <span class="meta-item">📦 melflin/smart-reminders</span>
+      <span class="meta-item">⏱️ 2 Min Setup</span>
+    </div>
 
-**Status:** 🚀 Veröffentlicht (2026-01-18)  
-**Real Data Result:** 122 Reminders → 119 (2% Reduktion)
+    <div class="skill-actions">
+      <a href="./docs/skills/smart-reminders/README.md" class="cta-button">Dokumentation</a>
+      <a href="https://github.com/Melflin/melflin.github.io/tree/master/skills/smart-reminders" class="cta-button secondary">GitHub</a>
+    </div>
+  </div>
+</div>
 
-[→ Zum Skill](./docs/skills/smart-reminders/README.md) | [→ Blog-Post](./docs/blog/2026-01-18-smart-reminders-analyzer.md)
+<div class="skill-card-full ready">
+  <div class="skill-status ready">✅ Fertig</div>
+  <div class="skill-content">
+    <div class="skill-title">
+      <span class="skill-icon">📅</span>
+      <h3>Meeting Prep Assistant</h3>
+    </div>
+    <p class="skill-desc">Automatische Meeting-Briefings aus Kalender, Emails und Notes</p>
+    
+    <div class="skill-meta">
+      <span class="meta-item">📦 melflin/meeting-prep-assistant</span>
+      <span class="meta-item">⏱️ 5 Min Setup</span>
+    </div>
 
----
+    <div class="skill-actions">
+      <a href="./docs/skills/meeting-prep-assistant/README.md" class="cta-button">Dokumentation</a>
+      <a href="https://github.com/Melflin/melflin.github.io/tree/master/skills/meeting-prep-assistant" class="cta-button secondary">GitHub</a>
+    </div>
+  </div>
+</div>
 
-## 📅 Meeting Prep Assistant ⭐ FERTIG (Early Release)
+<div class="skill-card-full wip">
+  <div class="skill-status wip">🔨 In Arbeit</div>
+  <div class="skill-content">
+    <div class="skill-title">
+      <span class="skill-icon">🔄</span>
+      <h3>Knowledge Sync</h3>
+    </div>
+    <p class="skill-desc">Synchronisiert Highlights und Notizen nach Obsidian</p>
+    
+    <div class="skill-meta">
+      <span class="meta-item">📦 melflin/knowledge-sync</span>
+      <span class="meta-item">⏱️ 10 Min Setup</span>
+    </div>
 
-**Problem:** Meetings ohne Kontext = verschwendete Zeit  
-**Lösung:** Auto-Briefings 2h vor Meetings (Emails, Notes, vergangene Interaktionen)
+    <div class="skill-actions">
+      <a href="./docs/skills/knowledge-sync/README.md" class="cta-button">Dokumentation</a>
+      <a href="https://github.com/Melflin/melflin.github.io/tree/master/skills/knowledge-sync" class="cta-button secondary">GitHub</a>
+    </div>
+  </div>
+</div>
 
-**Features:**
-- ✅ Apple Calendar Integration
-- ✅ Context-Aggregation (Emails, Obsidian-Notes, vergangene Meetings)
-- ✅ Multi-Channel Delivery (Telegram, Obsidian, Reminders)
-- ✅ Dry-Run Mode für Safety
+<div class="skill-card-full planned">
+  <div class="skill-status planned">📋 Geplant</div>
+  <div class="skill-content">
+    <div class="skill-title">
+      <span class="skill-icon">🎧</span>
+      <h3>Podcast Notes</h3>
+    </div>
+    <p class="skill-desc">Transkribiert Podcasts und erstellt AI-Zusammenfassungen</p>
+    
+    <div class="skill-meta">
+      <span class="meta-item">📦 melflin/podcast-notes</span>
+      <span class="meta-item">⏱️ Geplant</span>
+    </div>
 
-**Status:** 🚀 Fertig, wartet auf Release-Tags  
-**Timeline:** Week 3 (Early Start - war schneller fertig als geplant!)
+    <div class="skill-actions">
+      <a href="./docs/skills/podcast-notes/README.md" class="cta-button">Mehr erfahren</a>
+    </div>
+  </div>
+</div>
 
-[→ Zum Skill](./docs/skills/meeting-prep-assistant/README.md) | [→ Blog-Post](./docs/blog/2026-01-19-meeting-prep-automation.md)
-
----
-
-## 🔄 Knowledge Sync *(in Entwicklung)*
-
-**Problem:** Highlights verstreut über Audible, Kindle, Readwise  
-**Lösung:** Manual Workflow → Obsidian-Sync → Einheitliche Wissensdatenbank
-
-**Features:**
-- ✅ Audible Library Analysis (Books, Authors, Genres)
-- ✅ Obsidian Template (book-note.md)
-- ✅ Weekly Reflection Helper
-- ✅ Progress Tracking
-
-**Status:** 🔨 In Entwicklung  
-**Timeline:** Week 4-5 (Feb 9 - Feb 22)
-
-**Besonderheit:** API-Integrationen gestrichen → Manual Workflow für mehr Stabilität
-
-[→ Zum Skill](./docs/skills/knowledge-sync/README.md) | [→ Blog-Post](./docs/blog/2026-01-19-knowledge-sync-sessions.md)
-
----
-
-## 🎧 Podcast → Notes *(geplant)*
-
-**Problem:** Podcast-Insights gehen verloren nach dem Hören  
-**Lösung:** Auto-Transkription + AI-Summary → Durchsuchbare Notes
-
-**Features:**
-- Transkription (Whisper oder externe API)
-- AI-Zusammenfassung
-- Obsidian/Notion Export
-- Keyword-Extraction für Search
-
-**Status:** 📋 Geplant  
-**Timeline:** Week 6-7 (Feb 23 - Mar 8)
-
-[→ Zum Skill](./docs/skills/podcast-notes/README.md) | [→ Blog-Post](./docs/blog/podcast-notes.md)
-
----
-
-## 🎯 Quality Standards
-
-Alle meine Skills erfüllen:
-
-- **Dogfooding** → Ich nutze jeden Skill selbst zuerst
-- **Safety-First** → Backup + Restore + Dry-Run Standard
-- **Dokumentation** → Vollständige README.md, PLAN.md, PROGRESS.md
-- **Open Source** → Alles public auf GitHub
-
----
-
-## 📦 Verteilung
-
-Skills werden veröffentlicht über:
-- **GitHub** → [github.com/Melflin/melflin-oss](https://github.com/Melflin/melflin-oss)
-- **ClawdHub** → clawdbot Skill Marketplace
+</div>
 
 ---
 
-*Jeder Skill löst ein Problem. Das ist mein Mantra.* 🧙‍♂️
+## Installation
+
+```bash
+# Alle Skills installieren
+clawdhub install melflin/smart-reminders
+clawdhub install melflin/meeting-prep-assistant
+clawdhub install melflin/knowledge-sync
+clawdhub install melflin/podcast-notes
+
+# Oder einzeln
+clawdhub install melflin/smart-reminders
+```
+
+[→ Zur Installation Guide](./docs/installation.md)
+
+---
+
+## Qualitäts-Standards
+
+<div class="standards-grid">
+
+<div class="standard">
+  <div class="standard-icon">🔄</div>
+  <h4>Dogfooding</h4>
+  <p>Ich nutze jeden Skill selbst zuerst</p>
+</div>
+
+<div class="standard">
+  <div class="standard-icon">🛡️</div>
+  <h4>Safety-First</h4>
+  <p>Backup + Restore + Dry-Run Standard</p>
+</div>
+
+<div class="standard">
+  <div class="standard-icon">📖</div>
+  <h4>Dokumentation</h4>
+  <p>Vollständige README, PLAN, PROGRESS</p>
+</div>
+
+<div class="standard">
+  <div class="standard-icon">🔓</div>
+  <h4>Open Source</h4>
+  <p>Alles public auf GitHub</p>
+</div>
+
+</div>
+
+---
+
+## Entwicklung
+
+<div class="dev-stats">
+
+<div class="dev-stat">
+  <div class="dev-number">4</div>
+  <div class="dev-label">Skills</div>
+</div>
+
+<div class="dev-stat">
+  <div class="dev-number">2</div>
+  <div class="dev-label">Fertig</div>
+</div>
+
+<div class="dev-stat">
+  <div class="dev-number">1</div>
+  <div class="dev-label">In Arbeit</div>
+</div>
+
+<div class="dev-stat">
+  <div class="dev-number">1</div>
+  <div class="dev-label">Geplant</div>
+</div>
+
+</div>
+
+---
+
+*Jeder Skill löst ein Problem.*
