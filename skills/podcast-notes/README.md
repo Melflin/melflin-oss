@@ -1,91 +1,94 @@
-# Podcast → Notes 🎧
+# 🎧 Podcast Notes
 
-Transform podcasts and YouTube videos into structured Obsidian notes with AI-powered transcription and insight extraction.
+Transformiert Podcasts und YouTube Videos in strukturierte Obsidian Notes mit AI-Transkription und Insight-Extraktion.
 
-[![GitHub Stars](https://img.shields.io/github/stars/melflin/melflin-oss?style=flat-square&logo=github)](https://github.com/melflin/melflin-oss/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/Melflin/melflin.github.io?style=flat-square&logo=github)](https://github.com/Melflin/melflin.github.io/stargazers)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green?style=flat-square)](https://nodejs.org/)
+[![Status](https://img.shields.io/badge/Status-📋_Geplant-yellow?style=flat-square)]()
 
-## 🎬 Demo
+---
 
-![Podcast → Notes Demo](../../demo/podcast-notes.gif)
+## ✨ Features
 
-## Features
+- **🎙️ Audio Extraction** → YouTube, Spotify, Podcast URLs
+- **🤖 AI Transcription** → Lokal (Whisper) oder Cloud
+- **💡 Key Insights** → AI-gestützte Zusammenfassung
+- **📝 Obsidian Integration** → Automatisch in Vault speichern
+- **🏷️ Auto-Tagging** → Themen automatisch verschlagworten
 
-- 🎙️ **Audio Extraction** - Download from YouTube, Spotify, or any podcast URL
-- 🤖 **AI Transcription** - Local (Whisper) or Cloud options
-- 💡 **Key Insights** - AI-powered summary of main points
-- 📝 **Obsidian Integration** - Automatically saves to your vault
-- 🏷️ **Auto-Tagging** - Topics and themes auto-tagged
+---
 
-## Installation
+## 🚀 Schnellstart
 
 ```bash
-cd skills/podcast-notes
-chmod +x *.js
+# Skill installieren (bald verfügbar)
+clawdhub install melflin/podcast-notes
+
+# YouTube Video verarbeiten
+podcast-notes "https://www.youtube.com/watch?v=..."
+
+# Dry run (nur Vorschau)
+podcast-notes "https://youtube.com/..." --dry-run
 ```
 
-### Dependencies
+---
 
-**Required:**
-- `yt-dlp` - For audio extraction
+## 📦 Installation
+
+### Voraussetzungen
+
+**Erforderlich:**
+- `yt-dlp` → Audio-Extraktion
   ```bash
-  brew install yt-dlp  # macOS
-  pip install yt-dlp   # Python
+  brew install yt-dlp
   ```
 
-- `ffmpeg` - For audio processing
+- `ffmpeg` → Audio-Verarbeitung
   ```bash
-  brew install ffmpeg  # macOS
+  brew install ffmpeg
   ```
 
-**Optional (transcription):**
-- `whisper-cli` - Local transcription (free, no API key)
+**Optional (Transkription):**
+- `whisper-cli` → Lokale Transkription (kostenlos)
   ```bash
   pip install openai-whisper
   ```
 
-## Usage
+---
 
-### Quick Start
+## 📖 Verwendung
+
+### Automatisch
 
 ```bash
-# Process a YouTube video
-node index.js "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+# YouTube Video
+podcast-notes "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
-# Dry run (preview only)
-node index.js "https://youtube.com/..." --dry-run
+# Nur Vorschau
+podcast-notes "https://youtube.com/..." --dry-run
 
-# Mock mode (test without downloading)
-node index.js "https://youtube.com/..." --mock
+# Mock (testen ohne Download)
+podcast-notes "https://youtube.com/..." --mock
 ```
 
-### Manual Steps
+### Manuell
 
 ```bash
-# Step 1: Fetch audio
+# Schritt 1: Audio laden
 node fetch.js "https://youtube.com/watch?v=..." --output=/tmp/audio.mp3
 
-# Step 2: Transcribe & analyze
+# Schritt 2: Transkribieren & Analysieren
 node analyze.js /tmp/audio.mp3 --json > /tmp/analysis.json
 
-# Step 3: Save to Obsidian
-node execute.js /tmp/analysis.json --destination="~/Obsidian/Melf2025"
+# Schritt 3: In Obsidian speichern
+node execute.js /tmp/analysis.json --destination="~/Obsidian/Vault"
 ```
 
-### Configuration
+---
 
-Set your Obsidian vault path:
-```bash
-export OBSIDIAN_VAULT="~/Obsidian/YourVault"
-```
+## 📁 Output Format
 
-Or pass directly:
-```bash
-node execute.js analysis.json --destination="~/Obsidian/YourVault"
-```
-
-## Output Format
-
-Notes are saved to `Podcast Notes/` in your vault with this structure:
+Notes werden gespeichert unter `{Obsidian_Vault}/Podcast Notes/` mit dieser Struktur:
 
 ```markdown
 ---
@@ -97,93 +100,59 @@ duration: ~60 min
 
 # 🎧 Podcast Notes
 
-## Source
-- URL, duration, date
+## Quelle
+- URL, Dauer, Datum
 
-## Summary
-AI-generated summary
+## Zusammenfassung
+AI-generierte Zusammenfassung
 
 ## 🎯 Key Insights
-1. First insight
-2. Second insight
+1. Erster Insight
+2. Zweiter Insight
 ...
 
-## 📝 Full Transcript
-[00:00] Introduction
+## 📝 Vollständiges Transkript
+[00:00] Einleitung
 ...
 
-## 🏷️ Topics
+## 🏷️ Themen
 - #topic1
 - #topic2
 ```
 
-## Architecture
+---
 
-```
-index.js (CLI)
-    │
-    ├── fetch.js (URL → Audio)
-    │       └── yt-dlp + ffmpeg
-    │
-    ├── analyze.js (Audio → Transcript + Insights)
-    │       └── Whisper API / whisper-cli
-    │
-    └── execute.js (Analysis → Obsidian Note)
-            └── Template-based note creation
+## 🔧 Konfiguration
+
+```bash
+# Obsidian Vault Pfad
+export OBSIDIAN_VAULT="~/Obsidian/DeinVault"
 ```
 
-## API Options
+---
 
-### Transcription
+## 📋 Transkription Optionen
 
 | Option | Pros | Cons |
 |--------|------|------|
-| whisper-cli | Free, local, private | Slower, needs GPU |
-| OpenAI Whisper API | Fast, accurate | Costs money |
-| Deepgram | Very fast | Paid |
-| AssemblyAI | Good quality | Paid |
+| whisper-cli | Gratis, lokal, privat | Langsamer |
+| OpenAI Whisper API | Schnell, genau | Kosten |
+| Deepgram | Sehr schnell | Bezahlt |
 
-### AI Insights
+---
 
-| Option | Pros | Cons |
-|--------|------|------|
-| MiniMax API | Fast, cheap | Current default |
-| OpenAI GPT | High quality | More expensive |
-| Local LLM | Free, private | Needs hardware |
+## 🤝 Beitragen
 
-## Troubleshooting
+Issues willkommen!
 
-### "yt-dlp not found"
-```bash
-brew install yt-dlp
-# or
-pip install yt-dlp
-```
+---
 
-### "ffmpeg not found"
-```bash
-brew install ffmpeg
-```
+## 📝 Lizenz
 
-### "Obsidian vault not found"
-Check your path:
-```bash
-ls ~/Obsidian/Melf2025
-```
+MIT License
 
-### Permission denied
-```bash
-chmod +x *.js
-```
+---
 
-## Roadmap
+**Made with 🧙‍♂️ by Melflin**
 
-- [ ] YouTube Chapter support
-- [ ] Speaker detection
-- [ ] Multi-language support
-- [ ] Notion integration
-- [ ] Scheduled downloads (cron)
-
-## License
-
-MIT - Part of Melflin OSS Skills
+[Website](https://melflin.github.io/) | [Skills](.) | [Sponsor](https://github.com/sponsors/Melflin)

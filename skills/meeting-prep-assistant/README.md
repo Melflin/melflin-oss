@@ -1,68 +1,83 @@
-# Meeting Prep Assistant 📅
+# 📅 Meeting Prep Assistant
 
-**Auto-generated briefing for upcoming meetings**
+Automatische Briefing-Generierung für bevorstehende Meetings. Keine Meetings mehr ohne Kontext.
 
-[![GitHub Stars](https://img.shields.io/github/stars/melflin/melflin-oss?style=flat-square&logo=github)](https://github.com/melflin/melflin-oss/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/Melflin/melflin.github.io?style=flat-square&logo=github)](https://github.com/Melflin/melflin.github.io/stargazers)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green?style=flat-square)](https://nodejs.org/)
+[![macOS](https://img.shields.io/badge/macOS-12+-black?style=flat-square)](https://www.apple.com/macos/)
 
-## 🎬 Demo
+---
 
-![Meeting Prep Demo](../../demo/meeting-prep.gif)
+## ✨ Features
 
-## Usage
+- **📅 Kalender Integration** → Apple Calendar via `accli`
+- **📧 Email Kontext** → Schnelle SQLite-Suche in Apple Mail
+- **🤖 AI Briefing** → KI-gestützte Zusammenfassung (MiniMax API)
+- **🔔 Proactive Notifications** → Cron-freundliches Script für Erinnerungen
+
+---
+
+## 🚀 Schnellstart
 
 ```bash
-cd /Users/melf/GitMelflin/skills/meeting-prep-assistant
-node index.js [--hours=24] [--format=brief|detailed|json]
+# 1. Skill installieren
+clawdhub install melflin/meeting-prep-assistant
+
+# 2. Briefing für nächste 24h
+melflin-meeting-prep
+
+# 3. Mit JSON Output
+melflin-meeting-prep --format=json
+
+# 4. Nächste Woche
+melflin-meeting-prep --hours=168
 ```
 
-### Examples
+---
+
+## 📦 Installation
+
+### Mit ClawdHub (empfohlen)
 
 ```bash
-# Briefings for next 24h
-node index.js
-
-# Next 48 hours, JSON output
-node index.js --hours=48 --format=json
-
-# Next week
-node index.js --hours=168
+clawdhub install melflin/meeting-prep-assistant
 ```
 
-## Features
+### Manuell
 
-- ✅ **Calendar Integration** - Fetches upcoming meetings from Apple Calendar via `accli`
-- ✅ **Email Context** - Searches Apple Mail for related emails (SQLite-fast, ~50ms)
-- ✅ **AI Briefing** - Generates AI-powered summaries (MiniMax API)
-- ✅ **Proactive Notifications** - notify-upcoming.js script for cron integration
-
-## Architecture
-
-```
-meeting-prep-assistant/
-├── index.js              # CLI entrypoint with --hours and --format flags
-├── fetch.js              # Apple Calendar integration via accli
-├── analyze.js            # Context aggregation (Emails, Notes, Past Meetings)
-├── execute.js            # AI-powered briefing generation (MiniMax API)
-├── notify-upcoming.js    # Proactive notifications (cron-friendly)
-└── README.md             # This file
+```bash
+git clone https://github.com/Melflin/melflin.github.io.git
+cd melflin.github.io/skills/meeting-prep-assistant
+node index.js --help
 ```
 
-## Context Sources
+### Voraussetzungen
 
-| Source | Status | Description |
-|--------|--------|-------------|
-| Apple Calendar | ✅ Ready | Via accli CLI |
-| Apple Mail | ✅ Ready | Fast SQLite search |
-| Obsidian Notes | ⏳ Planned | Future integration |
-| Past Meetings | ⏳ Planned | Calendar history lookup |
+- macOS mit Calendar.app
+- [accli](https://github.com/clawdbot/clawdbot/tree/main/skills/accli) Skill installiert
+- [apple-mail](https://github.com/melflin/melflin/tree/main/skills/apple-mail) Skill installiert
 
-## Requirements
+---
 
-- macOS with Apple Calendar.app
-- [accli](https://github.com/clawdbot/clawdbot/tree/main/skills/accli) skill installed
-- [apple-mail](https://github.com/melflin/melflin/tree/main/skills/apple-mail) skill installed
+## 📖 Verwendung
 
-## Output Example
+### Basis
+
+```bash
+# Briefing für nächste 24h (Standard)
+melflin-meeting-prep
+
+# Nächste 48 Stunden
+melflin-meeting-prep --hours=48
+
+# Detailliertes Format
+melflin-meeting-prep --format=detailed
+
+# JSON für Automatisierung
+melflin-meeting-prep --format=json
+```
+
+### Output Beispiel
 
 ```
 ## 📅 Weekly Team Sync
@@ -79,31 +94,63 @@ meeting-prep-assistant/
 ### 🎯 Prep-Punkte
 - [ ] Meeting-Ziel klären
 - [ ] Agenda-Punkte vorbereiten
-- [ ] Agenda für Weekly Sync ansprechen
 
 ### 📝 Notizen
 _Hier können deine Notizen während dem Meeting rein_
 ```
 
-## Development
+---
 
-```bash
-# Test with real calendar
-node index.js --hours=24
+## 📁 Dateien
 
-# Debug mode (add this to index.js)
-console.log('Meetings:', JSON.stringify(meetings, null, 2));
-```
-
-## Roadmap
-
-- [x] Calendar integration (fetch.js)
-- [x] Email search (analyze.js with apple-mail)
-- [x] AI-powered summary (execute.js with MiniMax API)
-- [x] Proactive trigger (notify-upcoming.js for cron)
-- [ ] Obsidian notes integration
-- [ ] Telegram/WhatsApp notification delivery (via Clawdbot)
+| Datei | Beschreibung |
+|-------|--------------|
+| `index.js` | CLI Einstiegspunkt |
+| `fetch.js` | Kalender-Abruf via accli |
+| `analyze.js` | Context-Aggregation |
+| `execute.js` | AI Briefing Generierung |
+| `notify-upcoming.js` | Proaktive Notifications (cron) |
 
 ---
 
-*Part of the Melflin OSS Skills Collection*
+## 🔔 Automatisierung
+
+### Cron-Job für tägliche Briefing-Erinnerung
+
+```bash
+# Jeden Tag um 8:00 Uhr Briefing für den Tag
+0 8 * * * melflin-meeting-prep --hours=24
+```
+
+### Script für proaktive Benachrichtigung
+
+```bash
+# 2 Stunden vor jedem Meeting
+melflin-meeting-prep-notify --hours=2 --delivery=telegram
+```
+
+---
+
+## 🛡️ Sicherheit
+
+- **Dry-Run Mode** → Vorschau ohne Änderungen
+- **Lokale Daten** → Alle Daten bleiben auf deinem Mac
+- **Keine.externen Calls** → Ohne Konfiguration keine API-Aufrufe
+
+---
+
+## 🤝 Beitragen
+
+Issues und Pull Requests willkommen!
+
+---
+
+## 📝 Lizenz
+
+MIT License -siehe [LICENSE](../../LICENSE)
+
+---
+
+**Made with 🧙‍♂️ by Melflin**
+
+[Website](https://melflin.github.io/) | [Skills](.) | [Sponsor](https://github.com/sponsors/Melflin)

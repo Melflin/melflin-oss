@@ -1,168 +1,147 @@
-# Knowledge Sync 📚🔄
+# 🔄 Knowledge Sync
 
-**Status:** 🚀 Complete  
-**Started:** 2026-01-18  
-**Published:** 2026-01-19
+Synchronisiert deine Bücher und Audiobooks nach Obsidian. Besser behalten und durchsuchen.
 
-[![GitHub Stars](https://img.shields.io/github/stars/melflin/melflin-oss?style=flat-square&logo=github)](https://github.com/melflin/melflin-oss/stargazers)
-
-## 🎬 Demo
-
-![Knowledge Sync Demo](../../demo/knowledge-sync.gif)
-
-Sync your reading/audiobook consumption to Obsidian for better retention and search.
+[![GitHub Stars](https://img.shields.io/github/stars/Melflin/melflin.github.io?style=flat-square&logo=github)](https://github.com/Melflin/melflin.github.io/stargazers)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green?style=flat-square)](https://nodejs.org/)
+[![Obsidian](https://img.shields.io/badge/Obsidian-✓-purple?style=flat-square)](https://obsidian.md/)
 
 ---
 
-## 🎯 Problem
+## ✨ Features
 
-You read books and listen to audiobooks, but:
-- Insights get lost after finishing
-- No searchable record of key takeaways
-- Highlights scattered across apps (Audible, Kindle, etc.)
+- **📚 Quick Add** → Bücher in Sekunden hinzufügen
+- **🔄 Reflection** → Wöchentliche Review-Prompts
+- **📊 Tracking** → Alle gelesenen Bücher an einem Ort
+- **🏷️ Tags** → Automatische Verschlagwortung
 
 ---
 
-## 💡 Solution
+## 🚀 Schnellstart
 
-Simple Obsidian-based workflow:
-1. **Quick Add** - Create book notes in seconds
-2. **Reflect** - Weekly review prompts
-3. **Track** - See all consumed books in one place
+```bash
+# 1. Skill installieren
+clawdhub install melflin/knowledge-sync
+
+# 2. Buch hinzufügen
+knowledge-sync add --title "Atomic Habits" --author "James Clear"
+
+# 3. Letzte Bücher anzeigen
+knowledge-sync review
+
+# 4. Alle Bücher listen
+knowledge-sync list
+```
 
 ---
 
 ## 📦 Installation
 
-```bash
-# Clone the repo
-cd ~/GitMelflin/skills/knowledge-sync
+### Mit ClawdHub
 
-# Make scripts executable
-chmod +x *.js
+```bash
+clawdhub install melflin/knowledge-sync
+```
+
+### Manuell
+
+```bash
+git clone https://github.com/Melflin/melflin.github.io.git
+cd melflin.github.io/skills/knowledge-sync
+```
+
+### Voraussetzungen
+
+- Obsidian Vault
+- `OBSIDIAN_VAULT_PATH` Variable setzen
+
+```bash
+export OBSIDIAN_VAULT_PATH="/path/to/your/Obsidian/vault/03 Ressources/Bücher"
 ```
 
 ---
 
-## 🚀 Usage
+## 📖 Verwendung
 
-### Add a New Book
+### Buch hinzufügen
+
 ```bash
-# Basic usage
-node index.js add --title "Book Title" --author "Author Name"
+# Basis
+knowledge-sync add --title "Book Title" --author "Author"
 
-# Full options
-node index.js add \
-  --title "Atomic Habits" \
-  --author "James Clear" \
-  --format audiobook \
-  --tags "productivity,habits,psychology"
+# Mit Tags
+knowledge-sync add --title "Atomic Habits" --author "James Clear" --tags "productivity,habits"
+
+# Format spezifizieren
+knowledge-sync add --title "Book" --author "Author" --format audiobook
 ```
 
-### Review Recent Reading
-```bash
-# Show books from last 30 days
-node index.js review
+### Wöchentliches Review
 
-# Custom time period
-node index.js review 7   # Last 7 days
+```bash
+# Letzte 30 Tage
+knowledge-sync review
+
+# Letzte 7 Tage
+knowledge-sync review 7
 ```
 
-### List All Books
+### Alle Bücher anzeigen
+
 ```bash
-# Show all synced books
-node index.js list
+knowledge-sync list
 ```
 
 ---
 
 ## 📁 Output
 
-Books are saved to:
+Bücher werden gespeichert unter:
 ```
-{OBSIDIAN_VAULT}/03 Ressources/Bücher/{Book_Title}.md
+{OBSIDIAN_VAULT}/03 Ressources/Bücher/{Buch_Titel}.md
 ```
 
-Example vault path:
-```
-/Users/melf/Library/Mobile Documents/iCloud~md~obsidian/Documents/Melf2025/03 Ressources/Bücher/
-```
+**Template enthält:**
+- Frontmatter (Titel, Autor, Datum, Rating, Tags)
+- Key Takeaways Section
+- Persönliche Notizen
+- Verwandte Notes Links
 
 ---
 
-## 📝 Template Format
-
-Each book note includes:
-- Frontmatter (title, author, dates, rating, tags)
-- Key Takeaways section with quotes/reflections
-- Personal Notes section
-- Related Notes linking
-
----
-
-## 🔧 Configuration
-
-Set environment variable for your Obsidian vault:
-```bash
-export OBSIDIAN_VAULT_PATH="/path/to/your/Obsidian/vault/03 Ressources/Bücher"
-```
-
-Or modify the default path in each `.js` file.
-
----
-
-## 📋 Module Reference
-
-| Module | Purpose |
-|--------|---------|
-| `index.js` | Unified CLI entry point |
-| `fetch.js` | Create new book notes from template |
-| `review.js` | Show recent books for reflection |
-| `list.js` | List all synced books |
-| `templates/book-note.md` | Obsidian note template |
-
----
-
-## 🧪 Testing
+## 🔧 Konfiguration
 
 ```bash
-# Dry run (preview without creating)
-node fetch.js --title "Test" --author "Author" --dry-run
-
-# Test list
-node list.js
-
-# Test review
-node review.js
+# Environment Variable setzen
+export OBSIDIAN_VAULT_PATH="/Users/melf/Oelf2025/03 Ressourcesbsidian/M/Bücher"
 ```
 
 ---
 
-## 🎯 Success Criteria
+## 📋 Module
 
-- [x] Research Stefan's tools ✅
-- [x] Create Obsidian template ✅
-- [x] Build `fetch.js` - Add book notes ✅
-- [x] Build `review.js` - Weekly reflection ✅
-- [x] Build `list.js` - Track all books ✅
-- [x] Test with real Audible book ⏳ (manual verification needed)
-- [x] Publish to GitHub ✅
-
----
-
-## 🔄 Future Enhancements
-
-- [ ] Audible API integration (when available)
-- [ ] Readwise sync (if Stefan starts using it)
-- [ ] Auto-tagging based on content
-- [ ] Daily cron reminder
+| Datei | Beschreibung |
+|-------|--------------|
+| `index.js` | CLI Einstiegspunkt |
+| `fetch.js` | Buch-Notiz erstellen |
+| `review.js` | Wöchentliches Review |
+| `list.js` | Alle Bücher anzeigen |
+| `templates/book-note.md` | Obsidian Template |
 
 ---
 
-## 📜 License
+## 🤝 Beitragen
 
-MIT
+Issues willkommen!
 
 ---
 
-**Built by Melflin 🧙‍♂️** | Part of the [Melflin OSS](https://github.com/Melflin/melflin-oss) project
+## 📝 Lizenz
+
+MIT License
+
+---
+
+**Made with 🧙‍♂️ by Melflin**
+
+[Website](https://melflin.github.io/) | [Skills](.) | [Sponsor](https://github.com/sponsors/Melflin)
