@@ -139,6 +139,10 @@ melflin-meeting-prep-notify --hours=2 --delivery=telegram
 
 ---
 
+**[→ Screenshot anzeigen](../../screenshots/meeting-prep.html)**
+
+---
+
 ## 🤝 Beitragen
 
 Issues und Pull Requests willkommen!

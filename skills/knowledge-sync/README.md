@@ -130,6 +130,10 @@ export OBSIDIAN_VAULT_PATH="/Users/melf/Oelf2025/03 Ressourcesbsidian/M/Bücher"
 
 ---
 
+**[→ Screenshot anzeigen](../../screenshots/knowledge-sync.html)**
+
+---
+
 ## 🤝 Beitragen
 
 Issues willkommen!

@@ -723,6 +723,33 @@ body {
   text-align: center;
 }
 
+.screenshot-preview a {
+  display: block;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.screenshot-preview a:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+}
+
+/* Screenshot Gallery */
+.screenshot-preview {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  text-align: center;
+}
+
 .screenshot-preview img {
   border-radius: 8px;
   border: 1px solid #e5e7eb;

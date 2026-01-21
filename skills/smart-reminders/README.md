@@ -178,6 +178,10 @@ melflin-smart-reminders --batch
 
 ---
 
+**[→ Screenshot anzeigen](../../screenshots/smart-reminders.html)**
+
+---
+
 ## 🤝 Beitragen
 
 Issues und Pull Requests willkommen!
