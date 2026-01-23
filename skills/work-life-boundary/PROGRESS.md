@@ -12,18 +12,36 @@
 ## Aktueller Stand
 
 ### Done ✅
-- [ ] Projektstruktur erstellt
-- [ ] PLAN.md dokumentiert
+- [x] Projektstruktur erstellt
+- [x] PLAN.md dokumentiert
+- [x] README.md erstellt
 
 ### In Progress 🔨
-- [ ] CreateNewSkill.md Template angewendet
-- [ ] README.md erstellt
+- [ ] index.js MVP (Boundary Setup + Reminder)
 
 ### Todo 📋
-- [ ] index.js MVP (Boundary Setup + Reminder)
 - [ ] Apple Calendar Integration
 - [ ] Benachrichtigungen
 - [ ] Testing und Veröffentlichung
+
+---
+
+## Iteration 2 - 23.01.2026
+
+### Erledigt
+- ✅ README.md mit Feature-Übersicht erstellt
+- ✅ index.js MVP mit Boundary Setup + Reminder begonnen
+- ✅ createNewSkill.md als Kopiervorlage für SKILL.md
+
+### Gelernt
+- AppleScript osascript Befehle für Notifications identifiziert
+- node-cron für zeitbasierte Checks geeignet
+- Konfiguration in ~/.melflin/work-life-boundary.json
+
+### Nächste Schritte
+- index.js MVP fertigstellen (Boundary Setup + Reminder)
+- Erste Testläufe durchführen
+- Iteration 3: Apple Calendar Integration
 
 ---
 
@@ -34,19 +52,13 @@
 - ✅ PLAN.md mit vollständigem Konzept erstellt
 - ✅ CreateNewSkill.md Template als Referenz verwendet
 
-### Gelernt
-- Apple Calendar Integration via osascript ist möglich
-- Notification Center Benachrichtigungen via osascript realisierbar
-- Konfiguration sollte in ~/.melflin/ liegen (wie andere Skills)
-
-### Nächste Schritte
-- README.md mit Feature-Übersicht erstellen
-- index.js MVP mit Basis-CLI entwickeln
-- PROGRESS.md für Iteration 2 vorbereiten
-
 ---
 
 ## Changelog
+
+### v0.2.0 - 23.01.2026
+- ✅ README.md mit Feature-Übersicht
+- ✅ index.js MVP begonnen
 
 ### v0.1.0 - 23.01.2026
 - 🎉 Initial release
