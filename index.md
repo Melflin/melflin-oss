@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Melflin OSS - Dein persönlicher KI-Assistent
-description: Open Source CLI Skills für mehr Produktivität. Selbst entwickelt, kontinuierlich wachsend.
+description: Open Source CLI Skills für mehr Produktivität. Selbst entwickelt, kontinuierlich wachsend. 11 Skills verfügbar!
 ---
 
 <div class="hero">
