@@ -1,0 +1,39 @@
+{
+  "books": [
+    {
+      "title": "Foundation",
+      "author": "Isaac Asimov",
+      "genre": "Science Fiction",
+      "rating": 4.8,
+      "dateRead": "2025-01-15"
+    },
+    {
+      "title": "Dune",
+      "author": "Frank Herbert", 
+      "genre": "Science Fiction",
+      "rating": 4.9,
+      "dateRead": "2025-02-20"
+    },
+    {
+      "title": "Snow Crash",
+      "author": "William Gibson",
+      "genre": "Cyberpunk",
+      "rating": 4.5,
+      "dateRead": "2025-03-10"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "rating": 4.7,
+      "dateRead": "2025-04-05"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "rating": 4.6,
+      "dateRead": "2025-05-12"
+    }
+  ]
+}

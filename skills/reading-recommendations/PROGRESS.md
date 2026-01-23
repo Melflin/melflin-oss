@@ -6,7 +6,7 @@
 |-----------|--------|-------|------|-------|
 | 1 | ✅ Fertig | 2026-01-23 | 21:51 | CreateNewSkill.md, PLAN.md |
 | 2 | ✅ Fertig | 2026-01-23 | 21:51 | README.md, index.js MVP (Recommendation Algorithm) |
-| 3 | ⏳ Ausstehend | - | - | Genre/Theme Analysis |
+| 3 | ✅ Fertig | 2026-01-23 | 21:52 | Genre/Theme Analysis, Tests, data/books.json |
 | 4 | ⏳ Ausstehend | - | - | Testing, Git Commit |
 | 5 | ⏳ Ausstehend | - | - | Screenshots, Abschluss |
 
@@ -20,7 +20,7 @@
 - [x] README.md mit vollständiger Dokumentation
 - [x] index.js MVP mit Recommendation Algorithm
 
-### Nächste Iteration (3)
+### Nächste Iteration (4)
 - README.md mit Usage-Beispielen
 - index.js mit Recommendation Algorithm MVP
 
@@ -34,7 +34,7 @@
 ## Todos
 - [x] README.md erstellen (Iteration 2)
 - [x] index.js MVP entwickeln (Iteration 2)
-- [ ] Genre/Theme Analysis implementieren (Iteration 3)
+- [x] Genre/Theme Analysis implementieren (Iteration 3)
 - [ ] Testing schreiben (Iteration 4)
 - [ ] Git commit & push (Iteration 4)
 - [ ] Screenshots erstellen (Iteration 5)
