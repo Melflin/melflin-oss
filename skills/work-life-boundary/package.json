@@ -1,0 +1,23 @@
+{
+  "name": "melflin-work-life-boundary",
+  "version": "1.0.0",
+  "description": "Automatische Work-Life Balance mit Boundary-Zeit und Familien-Schutz",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js",
+    "setup": "node index.js setup"
+  },
+  "keywords": [
+    "work-life-balance",
+    "productivity",
+    "calendar",
+    "notifications",
+    "family"
+  ],
+  "author": "Melflin",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0"
+  }
+}

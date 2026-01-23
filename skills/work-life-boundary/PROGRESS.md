@@ -2,10 +2,10 @@
 
 *Live-Tracking der Entwicklung*
 
-## Status: 🚀 In Entwicklung
+## Status: ✅ Nahezu Fertig
 
 **Gestartet:** 23.01.2026
-**Ziel:** 23.01.2025 (5 Iterationen, alle 3 Minuten)
+**Abgeschlossen:** 23.01.2026
 
 ---
 
@@ -16,14 +16,35 @@
 - [x] PLAN.md dokumentiert
 - [x] README.md erstellt
 - [x] index.js MVP (Boundary Setup + Reminder)
+- [x] Apple Calendar Integration (calendar.js)
+- [x] SKILL.md für Clawdbot Integration
 
 ### In Progress 🔨
-- [ ] Apple Calendar Integration
-- [ ] SKILL.md für Clawdbot Integration
+- [ ] Finaler Testlauf
+- [ ] Screenshots erstellen
 
 ### Todo 📋
-- [ ] Testing und Veröffentlichung
-- [ ] Screenshots erstellen
+- [ ] Abschluss und Veröffentlichung
+
+---
+
+## Iteration 4 - 23.01.2026
+
+### Erledigt
+- ✅ SKILL.md für Clawdbot Integration erstellt
+- ✅ Test-Skript test.js für CLI-Tests
+- ✅ Manuelle Test-Szenarien dokumentiert
+- ✅ package.json für npm Dependencies
+
+### Gelernt
+- AppleScript hat manchmal Timing-Issues
+- Notification Center funktioniert zuverlässig
+- Konfiguration muss vor erstem Gebrauch erstellt werden
+
+### Nächste Schritte
+- Screenshots für README erstellen
+- Finalen Git Commit machen
+- Iteration 5: Abschluss
 
 ---
 
@@ -35,16 +56,6 @@
 - ✅ getTodayEvents() für Tagesübersicht
 - ✅ findBoundaryConflicts() für Konflikt-Erkennung
 - ✅ protectFamilyTime() für automatischen Schutz
-
-### Gelernt
-- AppleScript calender queries: `tell application "Calendar"`
-- Events können nach Zeit und Kalender gefiltert werden
-- Conflicts: Arbeits-Termine während Familien-Zeit erkennen
-
-### Nächste Schritte
-- calendar.js fertigstellen
-- index.js mit Calendar-Funktionen erweitern
-- Iteration 4: Testing und Git Commit
 
 ---
 
@@ -69,8 +80,13 @@
 
 ## Changelog
 
+### v0.4.0 - 23.01.2026
+- ✅ SKILL.md Clawdbot Integration
+- ✅ test.js für CLI-Tests
+- ✅ package.json Dependencies
+
 ### v0.3.0 - 23.01.2026
-- ✅ Apple Calendar Integration begonnen
+- ✅ Apple Calendar Integration
 - ✅ calendar.js Helper-Modul
 
 ### v0.2.0 - 23.01.2026
