@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1a1a2e"/>
+  <rect x="20" y="20" width="760" height="460" rx="12" fill="#0d0d1a"/>
+  <text x="40" y="55" font-family="Monaco, Menlo, monospace" font-size="14" fill="#48bb78">🧙‍♂️ melflin @ family-calendar</text>
+  <text x="40" y="90" font-family="Monaco, Menlo, monospace" font-size="16" fill="#667eea">$ node index.js list</text>
+  <text x="40" y="130" font-family="Monaco, Menlo, monospace" font-size="14" fill="#e53e3e">⬇️  Lade Kalender-Events...</text>
+  <text x="40" y="160" font-family="Monaco, Menlo, monospace" font-size="14" fill="#48bb78">✅ 4 Events geladen</text>
+  <text x="40" y="195" font-family="Monaco, Menlo, monospace" font-size="14" fill="#cbd5e0">📅 Family Calendar - Übersicht</text>
+  <text x="40" y="225" font-family="Monaco, Menlo, monospace" font-size="12" fill="#a0aec0"> Datum         | Zeit              | Titel                    | Kalender | Ort</text>
+  <text x="40" y="245" font-family="Monaco, Menlo, monospace" font-size="12" fill="#a0aec0">---------------|-------------------|--------------------------|----------|------</text>
+  <text x="40" y="265" font-family="Monaco, Menlo, monospace" font-size="12" fill="#cbd5e0"> 23.01.2026    | 09:00 - 10:00     | Team Meeting             | arbeit   | Büro</text>
+  <text x="40" y="285" font-family="Monaco, Menlo, monospace" font-size="12" fill="#cbd5e0"> 24.01.2026    | 14:00 - 15:00     | Arzttermin Sandra        | sandra   | Praxis</text>
+  <text x="40" y="305" font-family="Monaco, Menlo, monospace" font-size="12" fill="#cbd5e0"> 25.01.2026    | 16:00 - 18:00     | Fussballtraining Arthur  | arthur   | Sportplatz</text>
+  <text x="40" y="325" font-family="Monaco, Menlo, monospace" font-size="12" fill="#cbd5e0"> 26.01.2026    | 09:00 - 17:00     | Workshop                 | arbeit   | Conference</text>
+  <text x="40" y="360" font-family="Monaco, Menlo, monospace" font-size="14" fill="#48bb78">📊 Total: 4 Termine</text>
+</svg>
