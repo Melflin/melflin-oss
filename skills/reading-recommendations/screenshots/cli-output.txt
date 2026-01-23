@@ -1,0 +1,54 @@
+┌─────────────────────────────────────────────────────────────────────┐
+│                    Reading Recommendation Engine                      │
+│                         CLI Output Example                            │
+└─────────────────────────────────────────────────────────────────────┘
+
+📚 Buchempfehlungen für dich:
+
+1. "The Dispossessed" von Ursula K. Le Guin (⭐ 4.4)
+   → Weil du "Foundation" von Isaac Asimov gelesen hast
+   → Genre: Science Fiction, Themen: Power, Morality
+
+2. "Left Hand of Darkness" von Ursula K. Le Guin (⭐ 4.5)
+   → Weil du "Ender's Game" von Orson Scott Card gelesen hast
+   → Genre: Science Fiction, Themen: Identity, Morality
+
+3. "Hyperion" von Dan Simmons (⭐ 4.6)
+   → Weil du "Foundation" von Isaac Asimov gelesen hast
+   → Genre: Science Fiction, Themen: Technology, Power
+
+4. "Culture Series Bundle" von Iain M. Banks (⭐ 4.7)
+   → Weil du "Foundation" von Isaac Asimov gelesen hast
+   → Genre: Science Fiction, Themen: Technology, Power
+
+5. "Foundation and Empire" von Isaac Asimov (⭐ 4.5)
+   → Weil du "Foundation" von Isaac Asimov gelesen hast
+   → Genre: Science Fiction, Themen: Power, War
+
+Basierend auf 8 gelesenen Büchern.
+
+
+┌─────────────────────────────────────────────────────────────────────┐
+│                         Usage Commands                                │
+└─────────────────────────────────────────────────────────────────────┘
+
+$ clawdbot empfehlung
+# Standard Empfehlungen generieren
+
+$ clawdbot empfehlung --genre "Science Fiction"
+# Nur Science Fiction Empfehlungen
+
+$ clawdbot empfehlung --limit 10
+# Top 10 Empfehlungen anzeigen
+
+
+┌─────────────────────────────────────────────────────────────────────┐
+│                         Features                                      │
+└─────────────────────────────────────────────────────────────────────┘
+
+✓ Knowledge Sync Integration
+✓ Genre/Theme Extraction (10+ Genres, 10+ Themen)
+✓ Content-Based Filtering Algorithmus
+✓ CLI Command: "empfehlung"
+✓ Demo-Daten für Testing
+✓ Unit Tests inklusive

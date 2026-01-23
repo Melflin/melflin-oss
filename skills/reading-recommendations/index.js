@@ -10,7 +10,7 @@ const path = require('path');
 
 // Configuration
 const CONFIG = {
-  knowledgeSyncPath: path.expandUser('~/.knowledge-sync/books.json'),
+  knowledgeSyncPath: process.env.HOME + '/.knowledge-sync/books.json',
   defaultLimit: 5,
   dataDir: path.join(__dirname, 'data'),
   genresFile: path.join(__dirname, 'data', 'genres.json'),
