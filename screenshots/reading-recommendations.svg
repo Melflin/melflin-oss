@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1a1a2e"/>
+  <rect x="20" y="20" width="760" height="460" rx="12" fill="#0d0d1a"/>
+  <text x="40" y="55" font-family="Monaco, Menlo, monospace" font-size="14" fill="#48bb78">🧙‍♂️ melflin @ reading-recommendations</text>
+  <text x="40" y="90" font-family="Monaco, Menlo, monospace" font-size="16" fill="#667eea">$ node index.js empfehlung</text>
+  <text x="40" y="125" font-family="Monaco, Menlo, monospace" font-size="14" fill="#a0aec0">📚 Buchempfehlungen basierend auf deiner Bibliothek</text>
+  <text x="40" y="155" font-family="Monaco, Menlo, monospace" font-size="13" fill="#718096">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+  <text x="40" y="190" font-family="Monaco, Menlo, monospace" font-size="13" fill="#f6ad55">📖 Weil du "Der Alchemist" gelesen hast:</text>
+  <text x="60" y="215" font-family="Monaco, Menlo, monospace" font-size="12" fill="#e2e8f0">   "Siddhartha" von Hermann Hesse (⭐ 4.7)</text>
+  <text x="60" y="238" font-family="Monaco, Menlo, monospace" font-size="11" fill="#718096">   → Spirituelle Reise, Selbstfindung | Similarity: 87%</text>
+  <text x="40" y="270" font-family="Monaco, Menlo, monospace" font-size="13" fill="#f6ad55">📖 Weil du "Atomic Habits" gelesen hast:</text>
+  <text x="60" y="295" font-family="Monaco, Menlo, monospace" font-size="12" fill="#e2e8f0">   "The Power of Habit" von Charles Duhigg (⭐ 4.6)</text>
+  <text x="60" y="318" font-family="Monaco, Menlo, monospace" font-size="11" fill="#718096">   → Verhaltensänderung, Gewohnheiten | Similarity: 92%</text>
+  <text x="40" y="350" font-family="Monaco, Menlo, monospace" font-size="13" fill="#48bb78">🎯 Deine Genres:</text>
+  <text x="60" y="375" font-family="Monaco, Menlo, monospace" font-size="12" fill="#e2e8f0">   🌍 Spiritual (35%) | 📈 Self-Help (28%) | 🔬 Science (22%)</text>
+  <text x="40" y="410" font-family="Monaco, Menlo, monospace" font-size="13" fill="#667eea">💡 Top Empfehlung:</text>
+  <text x="60" y="435" font-family="Monaco, Menlo, monospace" font-size="12" fill="#e2e8f0">   "Man's Search for Meaning" von Viktor Frankl</text>
+  <text x="40" y="460" font-family="Monaco, Menlo, monospace" font-size="12" fill="#718096">   Kombiniert Spiritual + Self-Help + existenzielle Themen</text>
+</svg>
