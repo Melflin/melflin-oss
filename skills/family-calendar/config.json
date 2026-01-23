@@ -1,0 +1,9 @@
+{
+  "calendars": {
+    "arbeit": "Arbeit",
+    "sandra": "Sandra",
+    "arthur": "Arthur"
+  },
+  "defaultRange": "week",
+  "outputFormat": "table"
+}
