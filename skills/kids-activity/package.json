@@ -1,0 +1,33 @@
+{
+  "name": "kids-activity-suggestor",
+  "version": "1.0.0",
+  "description": "Activity Suggestor for Kids - Suggests age-appropriate activities based on weather, interests, and available time",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js --quick",
+    "list": "node index.js --list",
+    "suggest": "node index.js --quick"
+  },
+  "keywords": [
+    "kids",
+    "activities",
+    "children",
+    "weather",
+    "suggestions",
+    "cli"
+  ],
+  "author": "Melflin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Melflin/melflin-oss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Melflin/melflin-oss/issues"
+  },
+  "homepage": "https://github.com/Melflin/melflin-oss/tree/main/skills/kids-activity"
+}
