@@ -1,0 +1,33 @@
+{
+  "lastUpdated": "2026-01-23T21:15:35.435Z",
+  "hobbies": {
+    "Lesen": {
+      "total": 25,
+      "history": [
+        {
+          "date": "2026-01-23",
+          "value": 25
+        }
+      ],
+      "today": 25
+    },
+    "Laufen": {
+      "total": 5.2,
+      "history": [
+        {
+          "date": "2026-01-23",
+          "value": 5.2
+        }
+      ],
+      "today": 5.2
+    },
+    "Bonsai pflegen": {
+      "total": 0,
+      "history": []
+    },
+    "Gitarre": {
+      "total": 0,
+      "history": []
+    }
+  }
+}

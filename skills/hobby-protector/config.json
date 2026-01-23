@@ -1,0 +1,46 @@
+{
+  "hobbies": [
+    {
+      "name": "Lesen",
+      "category": "Kultur",
+      "durationMinutes": 30,
+      "calendarName": "Hobby Time",
+      "reminderMinutesBefore": 15,
+      "trackProgress": true,
+      "progressUnit": "Seiten",
+      "defaultProgress": 0
+    },
+    {
+      "name": "Laufen",
+      "category": "Sport",
+      "durationMinutes": 45,
+      "calendarName": "Hobby Time",
+      "reminderMinutesBefore": 30,
+      "trackProgress": true,
+      "progressUnit": "km",
+      "defaultProgress": 0
+    },
+    {
+      "name": "Bonsai pflegen",
+      "category": "Pflanzen",
+      "durationMinutes": 20,
+      "calendarName": "Hobby Time",
+      "reminderMinutesBefore": 10,
+      "trackProgress": true,
+      "progressUnit": "Aufgaben",
+      "defaultProgress": 0
+    },
+    {
+      "name": "Gitarre",
+      "category": "Musik",
+      "durationMinutes": 60,
+      "calendarName": "Hobby Time",
+      "reminderMinutesBefore": 15,
+      "trackProgress": true,
+      "progressUnit": "Minuten",
+      "defaultProgress": 0
+    }
+  ],
+  "defaultCalendar": "Hobby Time",
+  "notificationSound": "default"
+}
